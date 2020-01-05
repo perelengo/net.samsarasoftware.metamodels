@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9QH74B3cEeqp5clWmz6TNw" name="wsdl2" URI="http://www.samsarasoftware.net/wsdl2.profile" metaclassReference="_-yK9cB3cEeqp5clWmz6TNw __lq1YB_pEeqPY7GM6Sjy4A _b43lQB_qEeqPY7GM6Sjy4A">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A87k0B3dEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_4gng8C_REeqNRJUKtSQxPw" name="wsdl2" nsURI="http://www.samsarasoftware.net/wsdl2.profile" nsPrefix="wsdl2">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4gng_i_REeqNRJUKtSQxPw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4gng_y_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4gnhAC_REeqNRJUKtSQxPw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4gnhAS_REeqNRJUKtSQxPw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4gnhAi_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4gnhAy_REeqNRJUKtSQxPw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_4gng8S_REeqNRJUKtSQxPw" name="WSDL2">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4gng8i_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__BsnMB3cEeqp5clWmz6TNw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4gng8y_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4gng9S_REeqNRJUKtSQxPw" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4gng9y_REeqNRJUKtSQxPw" name="location" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4gng-S_REeqNRJUKtSQxPw" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_qCwmMB_sEeqPY7GM6Sjy4A" name="wsdl2" nsURI="http://www.samsarasoftware.net/wsdl2.profile" nsPrefix="wsdl2">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qCxNQx_sEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qCxNRB_sEeqPY7GM6Sjy4A" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qCxNRR_sEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qCxNRh_sEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qCxNRx_sEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qCxNSB_sEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qCwmMR_sEeqPY7GM6Sjy4A" name="WSDL2">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qCwmMh_sEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__BsnMB3cEeqp5clWmz6TNw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_qCwmMx_sEeqPY7GM6Sjy4A" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_qCwmNR_sEeqPY7GM6Sjy4A" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qCwmNx_sEeqPY7GM6Sjy4A" name="location" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_qCwmOR_sEeqPY7GM6Sjy4A" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_cwPSIB_qEeqPY7GM6Sjy4A" name="wsdl2" nsURI="http:///schemas/wsdl2/_cwOrEB_qEeqPY7GM6Sjy4A/1" nsPrefix="wsdl2">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cwPSLh_qEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cwPSLx_qEeqPY7GM6Sjy4A" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cwPSMB_qEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cwPSMR_qEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cwPSMh_qEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cwPSMx_qEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_cwPSIR_qEeqPY7GM6Sjy4A" name="WSDL2">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cwPSIh_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__BsnMB3cEeqp5clWmz6TNw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_cwPSIx_qEeqPY7GM6Sjy4A" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_cwPSJR_qEeqPY7GM6Sjy4A" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_cwPSJx_qEeqPY7GM6Sjy4A" name="location" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_cwPSKR_qEeqPY7GM6Sjy4A" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_A88L4B3dEeqp5clWmz6TNw" name="wsdl2" nsURI="http:///schemas/wsdl2/_A84hgB3dEeqp5clWmz6TNw/0" nsPrefix="wsdl2">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A9DgoB3dEeqp5clWmz6TNw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9DgoR3dEeqp5clWmz6TNw" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9Dgoh3dEeqp5clWmz6TNw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9Dgox3dEeqp5clWmz6TNw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9DgpB3dEeqp5clWmz6TNw" key="Date" value="2019-12-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9DgpR3dEeqp5clWmz6TNw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A88L4R3dEeqp5clWmz6TNw" name="WSDL2">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A88L4h3dEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__BsnMB3cEeqp5clWmz6TNw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_A88L4x3dEeqp5clWmz6TNw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_-yK9cB3cEeqp5clWmz6TNw" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="__lq1YB_pEeqPY7GM6Sjy4A" alias="Interface">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_b43lQB_qEeqPY7GM6Sjy4A" alias="Port">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="__BsnMB3cEeqp5clWmz6TNw" name="WSDL2">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__4ly8R3cEeqp5clWmz6TNw" name="base_Component" association="__4fsUB3cEeqp5clWmz6TNw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ct2HQR_qEeqPY7GM6Sjy4A" name="base_Interface" association="_Ct1gMB_qEeqPY7GM6Sjy4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DcJXsB_qEeqPY7GM6Sjy4A" name="location">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GL_CEB_qEeqPY7GM6Sjy4A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GMBeUB_qEeqPY7GM6Sjy4A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cNMPcB_qEeqPY7GM6Sjy4A" name="base_Port" association="_cNLoYB_qEeqPY7GM6Sjy4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="__4fsUB3cEeqp5clWmz6TNw" name="E_WSDL2_Component1" memberEnd="__4ly8B3cEeqp5clWmz6TNw __4ly8R3cEeqp5clWmz6TNw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__4ly8B3cEeqp5clWmz6TNw" name="extension_WSDL2" type="__BsnMB3cEeqp5clWmz6TNw" aggregation="composite" association="__4fsUB3cEeqp5clWmz6TNw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Ct1gMB_qEeqPY7GM6Sjy4A" name="E_WSDL2_Interface1" memberEnd="_Ct2HQB_qEeqPY7GM6Sjy4A _Ct2HQR_qEeqPY7GM6Sjy4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Ct2HQB_qEeqPY7GM6Sjy4A" name="extension_WSDL2" type="__BsnMB3cEeqp5clWmz6TNw" aggregation="composite" association="_Ct1gMB_qEeqPY7GM6Sjy4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_cNLoYB_qEeqPY7GM6Sjy4A" name="E_WSDL2_Port1" memberEnd="_cNLoYR_qEeqPY7GM6Sjy4A _cNMPcB_qEeqPY7GM6Sjy4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_cNLoYR_qEeqPY7GM6Sjy4A" name="extension_WSDL2" type="__BsnMB3cEeqp5clWmz6TNw" aggregation="composite" association="_cNLoYB_qEeqPY7GM6Sjy4A"/>
+  </packagedElement>
+</uml:Profile>

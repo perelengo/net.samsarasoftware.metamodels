@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xhSv4MLBEea_8_bOQv4oqQ" name="xadisk" URI="http://www.samsarasoftware.net/xadisk.profile" metaclassReference="_zTOAgMLBEea_8_bOQv4oqQ">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t8j2IMLHEea_8_bOQv4oqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_5zVGAC_REeqNRJUKtSQxPw" name="xadisk" nsURI="http://www.samsarasoftware.net/xadisk.profile" nsPrefix="xadisk">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVtES_REeqNRJUKtSQxPw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zVtEi_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zVtEy_REeqNRJUKtSQxPw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zVtFC_REeqNRJUKtSQxPw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zVtFS_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zVtFi_REeqNRJUKtSQxPw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGAS_REeqNRJUKtSQxPw" name="XADisk" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGAi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_z6mwoMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_5zVGAy_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGBS_REeqNRJUKtSQxPw" name="XADiskStandalone" eSuperTypes="_5zVGCS_REeqNRJUKtSQxPw _5zVGGi_REeqNRJUKtSQxPw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGBi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7IukMMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGCS_REeqNRJUKtSQxPw" name="XADiskLocal" abstract="true" eSuperTypes="_5zVGAS_REeqNRJUKtSQxPw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGCi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QygJAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGCy_REeqNRJUKtSQxPw" name="instanceId" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGDS_REeqNRJUKtSQxPw" name="directory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGDy_REeqNRJUKtSQxPw" name="deadLockDetectorInterval" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGES_REeqNRJUKtSQxPw" name="lockTimeOut" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGEy_REeqNRJUKtSQxPw" name="transactionLogFileMaxSizeDirectory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGFS_REeqNRJUKtSQxPw" name="transactionTimeout" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGFy_REeqNRJUKtSQxPw" name="rollbackRecoveredTransactions" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGGi_REeqNRJUKtSQxPw" name="XADiskRemote" abstract="true" eSuperTypes="_5zVGAS_REeqNRJUKtSQxPw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGGy_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SGuxAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGHC_REeqNRJUKtSQxPw" name="remoteIP" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGHi_REeqNRJUKtSQxPw" name="remotePort" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGIS_REeqNRJUKtSQxPw" name="XADiskJta" eSuperTypes="_5zVGCS_REeqNRJUKtSQxPw _5zVGGi_REeqNRJUKtSQxPw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGIi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8W0vAMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5zVGJS_REeqNRJUKtSQxPw" name="XADiskJca" eSuperTypes="_5zVGAS_REeqNRJUKtSQxPw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zVGJi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9Y-vkMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5zVGJy_REeqNRJUKtSQxPw" name="jndi" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_JCbAAMiOEee6JIMjhFx77g" name="xadisk" nsURI="http://www.samsarasoftware.net/xadisk.profile" nsPrefix="xadisk">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbAK8iOEee6JIMjhFx77g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCbALMiOEee6JIMjhFx77g" key="Version" value="0.1.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCbALciOEee6JIMjhFx77g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCbALsiOEee6JIMjhFx77g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCbAL8iOEee6JIMjhFx77g" key="Date" value="2017-11-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCbAMMiOEee6JIMjhFx77g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbAAciOEee6JIMjhFx77g" name="XADisk" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbAAsiOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_z6mwoMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_JCbAA8iOEee6JIMjhFx77g" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbABciOEee6JIMjhFx77g" name="XADiskStandalone" eSuperTypes="_JCbACciOEee6JIMjhFx77g _JCbAGsiOEee6JIMjhFx77g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbABsiOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7IukMMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbACciOEee6JIMjhFx77g" name="XADiskLocal" abstract="true" eSuperTypes="_JCbAAciOEee6JIMjhFx77g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbACsiOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QygJAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAC8iOEee6JIMjhFx77g" name="instanceId" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbADciOEee6JIMjhFx77g" name="directory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAD8iOEee6JIMjhFx77g" name="deadLockDetectorInterval" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAEciOEee6JIMjhFx77g" name="lockTimeOut" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAE8iOEee6JIMjhFx77g" name="transactionLogFileMaxSizeDirectory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAFciOEee6JIMjhFx77g" name="transactionTimeout" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAF8iOEee6JIMjhFx77g" name="rollbackRecoveredTransactions" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbAGsiOEee6JIMjhFx77g" name="XADiskRemote" abstract="true" eSuperTypes="_JCbAAciOEee6JIMjhFx77g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbAG8iOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SGuxAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAHMiOEee6JIMjhFx77g" name="remoteIP" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAHsiOEee6JIMjhFx77g" name="remotePort" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbAIciOEee6JIMjhFx77g" name="XADiskJta" eSuperTypes="_JCbACciOEee6JIMjhFx77g _JCbAGsiOEee6JIMjhFx77g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbAIsiOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8W0vAMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JCbAJciOEee6JIMjhFx77g" name="XADiskJca" eSuperTypes="_JCbAAciOEee6JIMjhFx77g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCbAJsiOEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9Y-vkMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JCbAJ8iOEee6JIMjhFx77g" name="jndi" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_9rjw8Fc4EeeatsJTvGgPfw" name="xadisk" nsURI="http://www.samsarasoftware.net/xadisk.profile" nsPrefix="xadisk">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rlmIVc4EeeatsJTvGgPfw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9rlmIlc4EeeatsJTvGgPfw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9rlmI1c4EeeatsJTvGgPfw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9rlmJFc4EeeatsJTvGgPfw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9rlmJVc4EeeatsJTvGgPfw" key="Date" value="2017-06-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9rlmJlc4EeeatsJTvGgPfw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjw8Vc4EeeatsJTvGgPfw" name="xadisk" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjw8lc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_z6mwoMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_9rjw81c4EeeatsJTvGgPfw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjw9Vc4EeeatsJTvGgPfw" name="xadiskStandalone" eSuperTypes="_9rjw-Vc4EeeatsJTvGgPfw _9rjxClc4EeeatsJTvGgPfw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjw9lc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7IukMMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjw-Vc4EeeatsJTvGgPfw" name="xadiskLocal" abstract="true" eSuperTypes="_9rjw8Vc4EeeatsJTvGgPfw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjw-lc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QygJAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjw-1c4EeeatsJTvGgPfw" name="instanceId" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjw_Vc4EeeatsJTvGgPfw" name="directory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjw_1c4EeeatsJTvGgPfw" name="deadLockDetectorInterval" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxAVc4EeeatsJTvGgPfw" name="lockTimeOut" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxA1c4EeeatsJTvGgPfw" name="transactionLogFileMaxSizeDirectory" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxBVc4EeeatsJTvGgPfw" name="transactionTimeout" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxB1c4EeeatsJTvGgPfw" name="rollbackRecoveredTransactions" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjxClc4EeeatsJTvGgPfw" name="xadiskRemote" abstract="true" eSuperTypes="_9rjw8Vc4EeeatsJTvGgPfw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjxC1c4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SGuxAMLCEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxDFc4EeeatsJTvGgPfw" name="remoteIP" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxDlc4EeeatsJTvGgPfw" name="remotePort" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjxEVc4EeeatsJTvGgPfw" name="xadiskJta" eSuperTypes="_9rjw-Vc4EeeatsJTvGgPfw _9rjxClc4EeeatsJTvGgPfw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjxElc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8W0vAMLBEea_8_bOQv4oqQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_9rjxFVc4EeeatsJTvGgPfw" name="xadiskJca" eSuperTypes="_9rjw8Vc4EeeatsJTvGgPfw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rjxFlc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9Y-vkMLBEea_8_bOQv4oqQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_9rjxF1c4EeeatsJTvGgPfw" name="jndi" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_zTOAgMLBEea_8_bOQv4oqQ" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_z6mwoMLBEea_8_bOQv4oqQ" name="XADisk" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_065I8MLBEea_8_bOQv4oqQ" name="base_Component" association="_06gHYMLBEea_8_bOQv4oqQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_06gHYMLBEea_8_bOQv4oqQ" name="E_XADisk_Component1" memberEnd="_064h4MLBEea_8_bOQv4oqQ _065I8MLBEea_8_bOQv4oqQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_064h4MLBEea_8_bOQv4oqQ" name="extension_XADisk" type="_z6mwoMLBEea_8_bOQv4oqQ" aggregation="composite" association="_06gHYMLBEea_8_bOQv4oqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7IukMMLBEea_8_bOQv4oqQ" name="XADiskStandalone">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WwE6sMLCEea_8_bOQv4oqQ" general="_QygJAMLCEea_8_bOQv4oqQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_XFUx8MLCEea_8_bOQv4oqQ" general="_SGuxAMLCEea_8_bOQv4oqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8W0vAMLBEea_8_bOQv4oqQ" name="XADiskJta">
+    <generalization xmi:type="uml:Generalization" xmi:id="_XdhPgMLCEea_8_bOQv4oqQ" general="_QygJAMLCEea_8_bOQv4oqQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_X530UMLCEea_8_bOQv4oqQ" general="_SGuxAMLCEea_8_bOQv4oqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_9Y-vkMLBEea_8_bOQv4oqQ" name="XADiskJca">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jsSScMLCEea_8_bOQv4oqQ" general="_z6mwoMLBEea_8_bOQv4oqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0C1YMMLEEea_8_bOQv4oqQ" name="jndi">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0C1YMcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0C1YMsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_QygJAMLCEea_8_bOQv4oqQ" name="XADiskLocal" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_UjixsMLCEea_8_bOQv4oqQ" general="_z6mwoMLBEea_8_bOQv4oqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SEj74MLEEea_8_bOQv4oqQ" name="instanceId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1UrUMLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1WggMLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cngWMMLEEea_8_bOQv4oqQ" name="directory">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cngWMcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cngWMsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_crznYMLEEea_8_bOQv4oqQ" name="deadLockDetectorInterval">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_crznYcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_crznYsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cwEcUMLEEea_8_bOQv4oqQ" name="lockTimeOut">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cwEcUcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cwEcUsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cz_TAMLEEea_8_bOQv4oqQ" name="transactionLogFileMaxSizeDirectory">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cz_TAcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cz_TAsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_c4EhwMLEEea_8_bOQv4oqQ" name="transactionTimeout">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c4EhwcLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c4EhwsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kHvNcMLEEea_8_bOQv4oqQ" name="rollbackRecoveredTransactions">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kHvNccLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kHvNcsLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_SGuxAMLCEea_8_bOQv4oqQ" name="XADiskRemote" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_U_8Z0MLCEea_8_bOQv4oqQ" general="_z6mwoMLBEea_8_bOQv4oqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_02PAgMLDEea_8_bOQv4oqQ" name="remoteIP">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DQPzAMLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DQQaEMLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2VhpAMLDEea_8_bOQv4oqQ" name="remotePort">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cwf78MLEEea_8_bOQv4oqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CwhxIMLEEea_8_bOQv4oqQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Profile>

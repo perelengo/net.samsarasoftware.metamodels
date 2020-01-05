@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.samsarasoftware</groupId>
+		<version>0.2.0-SNAPSHOT</version>
+		<artifactId>net.samsarasoftware</artifactId>
+		<relativePath>../net.samsarasoftware/</relativePath>
+	</parent>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<groupId>net.samsarasoftware</groupId>
+	<artifactId>net.samsarasoftware.metamodels</artifactId>
+	<version>0.2.0-SNAPSHOT</version>
+	<packaging>eclipse-plugin</packaging>
+	<repositories>
+		<repository>
+			<id>eclipse-platform</id>
+			<layout>p2</layout>
+			<url>${eclipse-site}</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-compiler-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<id>1</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<inherited>false</inherited>
+						<configuration>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>attach-source</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.2</version>
+				<executions>
+					<execution>
+						<id>copy licenses</id>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>${env.SAMSARASOFTWARE_WORKSPACE_DIR}/net.samsarasoftware/src/license/</directory>
+									<include>THIRD-PARTY.properties</include>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+							<outputDirectory>src/license</outputDirectory>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy profiles</id>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>${env.SAMSARASOFTWARE_WORKSPACE_DIR}/net.samsarasoftware/net.samsarasoftware.metamodels/profiles/</directory>
+								</resource>
+							</resources>
+							<outputDirectory>target/classes/profiles</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>license-maven-plugin</artifactId> 
+				<version>1.12</version> <executions> <execution> <id>first</id> <goals> <goal>update-file-header</goal> 
+				</goals> <phase>process-sources</phase> <configuration> <extraExtensions> 
+				<ocl>java</ocl> <uml>xml</uml> <di>xml</di> <notation>xml</notation> </extraExtensions> 
+				<licenseName>apache_v2</licenseName> <roots> <root>src</root> <root>profiles</root> 
+				<root>constraints</root> </roots> </configuration> </execution> </executions> 
+				</plugin> -->
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>generateGenModel</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.8</version>
+						<executions>
+
+							<execution>
+								<id>generate-plugin-xml</id>
+								<phase>compile</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<target name="run">
+
+										<property name="compile_classpath" refid="maven.compile.classpath" />
+										<property name="runtime_classpath" refid="maven.runtime.classpath" />
+										<property name="test_classpath" refid="maven.test.classpath" />
+										<property name="plugin_classpath" refid="maven.plugin.classpath" />
+
+										<echo message="compile classpath: ${compile_classpath}" />
+										<echo message="runtime classpath: ${runtime_classpath}" />
+										<echo message="test classpath: ${test_classpath}" />
+										<echo message="plugin classpath: ${plugin_classpath}" />
+										<java fork="false" failonerror="yes"
+											classname="net.samsarasoftware.metamodels.GenModelGenerator">
+											<classpath refid="maven.runtime.classpath" />
+											<classpath refid="maven.compile.classpath" />
+											<arg line="-profilesDir ${basedir}/profiles" />
+										</java>
+									</target>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-compiler-plugin</artifactId>
+						<version>${tycho.version}</version>
+						<configuration>
+							<encoding>UTF-8</encoding>
+						</configuration>
+						<executions>
+							<execution>
+								<id>2</id>
+								<phase>compile</phase>
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<inherited>false</inherited>
+								<configuration>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>generateExtensions</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.8</version>
+						<executions>
+
+							<execution>
+								<id>generate-plugin-xml</id>
+								<phase>compile</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<target name="run">
+										<property name="compile_classpath" refid="maven.compile.classpath" />
+										<property name="runtime_classpath" refid="maven.runtime.classpath" />
+										<property name="test_classpath" refid="maven.test.classpath" />
+										<property name="plugin_classpath" refid="maven.plugin.classpath" />
+
+										<echo message="compile classpath: ${compile_classpath}" />
+										<echo message="runtime classpath: ${runtime_classpath}" />
+										<echo message="test classpath: ${test_classpath}" />
+										<echo message="plugin classpath: ${plugin_classpath}" />
+										<java fork="false" failonerror="yes"
+											classname="net.samsarasoftware.metamodels.PluginDescriptorGenerator">
+											<classpath refid="maven.runtime.classpath" />
+											<classpath refid="maven.compile.classpath" />
+											<arg
+												line="-profilesDir ${basedir}/profiles -targetDir ${basedir}/" />
+										</java>
+									</target>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+
+			</build>
+		</profile>
+	</profiles>
+
+</project>

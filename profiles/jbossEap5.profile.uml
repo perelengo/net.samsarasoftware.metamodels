@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_sTMCYN2TEeasvPfwINCg4A" name="jbossEap5" URI="http://www.samsarasoftware.net/jbossEap5.profile" metaclassReference="_uNhBEN2TEeasvPfwINCg4A">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6Qg44N2TEeasvPfwINCg4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_SlChkC_REeqNRJUKtSQxPw" name="jbossEap5" nsURI="http://www.samsarasoftware.net/jbossEap5.profile" nsPrefix="jbossEap5">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SlChmC_REeqNRJUKtSQxPw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SlChmS_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SlChmi_REeqNRJUKtSQxPw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SlChmy_REeqNRJUKtSQxPw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SlChnC_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SlChnS_REeqNRJUKtSQxPw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SlChkS_REeqNRJUKtSQxPw" name="JBossEAP5">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SlChki_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u9z1kN2TEeasvPfwINCg4A"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SlChky_REeqNRJUKtSQxPw" name="securityDomain" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SlChlS_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_j6lnMMiMEee6JIMjhFx77g" name="jbossEap5" nsURI="http://www.samsarasoftware.net/jbossEap5.profile" nsPrefix="jbossEap5">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j6vYMciMEee6JIMjhFx77g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j6vYMsiMEee6JIMjhFx77g" key="Version" value="0.1.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j6vYM8iMEee6JIMjhFx77g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j6vYNMiMEee6JIMjhFx77g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j6vYNciMEee6JIMjhFx77g" key="Date" value="2017-11-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j6vYNsiMEee6JIMjhFx77g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_j6lnMciMEee6JIMjhFx77g" name="JBossEAP5">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j6lnMsiMEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u9z1kN2TEeasvPfwINCg4A"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_j6lnM8iMEee6JIMjhFx77g" name="securityDomain" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_j6lnNciMEee6JIMjhFx77g" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_rtsdMFc4EeeatsJTvGgPfw" name="jbossEap5" nsURI="http://www.samsarasoftware.net/jbossEap5.profile" nsPrefix="jbossEap5">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rtvggFc4EeeatsJTvGgPfw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rtvggVc4EeeatsJTvGgPfw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rtvgglc4EeeatsJTvGgPfw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rtvgg1c4EeeatsJTvGgPfw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rtvghFc4EeeatsJTvGgPfw" key="Date" value="2017-06-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rtvghVc4EeeatsJTvGgPfw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_rtsdMVc4EeeatsJTvGgPfw" name="jbossEap5">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rtsdMlc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u9z1kN2TEeasvPfwINCg4A"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_rtsdM1c4EeeatsJTvGgPfw" name="securityDomain" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_rtsdNVc4EeeatsJTvGgPfw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_uNhBEN2TEeasvPfwINCg4A" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_u9z1kN2TEeasvPfwINCg4A" name="JBossEAP5">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0-7DcN2TEeasvPfwINCg4A" name="securityDomain">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4GsssN2TEeasvPfwINCg4A" name="base_Component" association="_4GobQN2TEeasvPfwINCg4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_4GobQN2TEeasvPfwINCg4A" name="E_JBossEAP5_Component1" memberEnd="_4GsFoN2TEeasvPfwINCg4A _4GsssN2TEeasvPfwINCg4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_4GsFoN2TEeasvPfwINCg4A" name="extension_JBossEAP5" type="_u9z1kN2TEeasvPfwINCg4A" aggregation="composite" association="_4GobQN2TEeasvPfwINCg4A"/>
+  </packagedElement>
+</uml:Profile>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/database.ecore"
+   		class = "database.databasePackage"
+   		genModel="profiles/database.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="database"
+			uri="http://www.samsarasoftware.net/database.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/database.profile.uml#_0UMZQC_QEeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/dojo.ecore"
+   		class = "dojo.dojoPackage"
+   		genModel="profiles/dojo.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="dojo"
+			uri="http://www.samsarasoftware.net/dojo.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/dojo.profile.uml#_GfkkkC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/ejb3.ecore"
+   		class = "ejb3.ejb3Package"
+   		genModel="profiles/ejb3.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="ejb3"
+			uri="http://www.samsarasoftware.net/ejb3.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/ejb3.profile.uml#_JlRxQC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/jbossEap5.ecore"
+   		class = "jbossEap5.jbossEap5Package"
+   		genModel="profiles/jbossEap5.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="jbossEap5"
+			uri="http://www.samsarasoftware.net/jbossEap5.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jbossEap5.profile.uml#_SlChkC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/jpa.ecore"
+   		class = "jpa.jpaPackage"
+   		genModel="profiles/jpa.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="jpa"
+			uri="http://www.samsarasoftware.net/jpa.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jpa.profile.uml#_VgowAC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/lopd.ecore"
+   		class = "lopd.lopdPackage"
+   		genModel="profiles/lopd.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="lopd"
+			uri="http://www.samsarasoftware.net/lopd.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/lopd.profile.uml#_aAV1gC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/maven.ecore"
+   		class = "maven.mavenPackage"
+   		genModel="profiles/maven.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="maven"
+			uri="http://www.samsarasoftware.net/maven.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/maven.profile.uml#_fk2m8C_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/security.ecore"
+   		class = "security.securityPackage"
+   		genModel="profiles/security.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="security"
+			uri="http://www.samsarasoftware.net/security.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/security.profile.uml#_vLRiMC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/transaction.ecore"
+   		class = "transactionProfile.transactionProfilePackage"
+   		genModel="profiles/transaction.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="transactionProfile"
+			uri="http://www.samsarasoftware.net/transaction.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/transaction.profile.uml#_w7m3YC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/userInterface.ecore"
+   		class = "userInterface.userInterfacePackage"
+   		genModel="profiles/userInterface.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="userInterface"
+			uri="http://www.samsarasoftware.net/userInterface.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/userInterface.profile.uml#_z39TwC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/webservice.ecore"
+   		class = "webservice.webservicePackage"
+   		genModel="profiles/webservice.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="webservice"
+			uri="http://www.samsarasoftware.net/webservice.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6IC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/xadisk.ecore"
+   		class = "xadisk.xadiskPackage"
+   		genModel="profiles/xadisk.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="xadisk"
+			uri="http://www.samsarasoftware.net/xadisk.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/xadisk.profile.uml#_5zVGAC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+	<extension point="org.eclipse.ocl.pivot.complete_ocl_registry">
+		<document resource="constraints/security_constraints.ocl">
+			<for uri="http://www.eclipse.org/uml2/5.0.0/UML"/>
+		</document>
+	</extension>
+	<extension point="org.eclipse.ocl.pivot.complete_ocl_registry">
+		<document resource="constraints/service_constraints.ocl">
+			<for uri="http://www.eclipse.org/uml2/5.0.0/UML"/>
+		</document>
+	</extension>
+	<extension point="org.eclipse.ocl.pivot.complete_ocl_registry">
+		<document resource="constraints/sql_constraints.ocl">
+			<for uri="http://www.eclipse.org/uml2/5.0.0/UML"/>
+		</document>
+	</extension>
+	   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="http"
+			uri="http://www.samsarasoftware.net/http.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_cZ2_sC_TEeqrGbciM_OSjQ">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/http.ecore"
+   		class = "http.httpPackage"
+   		genModel="profiles/http.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/jsonrpc.ecore"
+   		class = "jsonrpc.jsonrpcPackage"
+   		genModel="profiles/jsonrpc.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="jsonrpc"
+			uri="http://www.samsarasoftware.net/jsonrpc.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jsonrpc.profile.uml#_DcjYIC_UEeqhmYkp_yv4BA">
+		</profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/jaxrs.ecore"
+   		class = "jaxrs.jaxrsPackage"
+   		genModel="profiles/jaxrs.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="jaxrs"
+			uri="http://www.samsarasoftware.net/jaxrs.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jaxrs.profile.uml#_QeoOsC_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/wsdl2.ecore"
+   		class = "wsdl2.wsdl2Package"
+   		genModel="profiles/wsdl2.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="wsdl2"
+			uri="http://www.samsarasoftware.net/wsdl2.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/wsdl2.profile.uml#_4gng8C_REeqNRJUKtSQxPw">
+      </profile>
+   </extension>
+</plugin>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__XDoQE0BEeaqg889t57Luw" name="ejb3" URI="http://www.samsarasoftware.net/ejb3.profile" metaclassReference="_IZhHQE0CEeaqg889t57Luw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KoUhIE0CEeaqg889t57Luw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_JlRxQC_REeqNRJUKtSQxPw" name="ejb3" nsURI="http://www.samsarasoftware.net/ejb3.profile" nsPrefix="ejb3">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JlRxRi_REeqNRJUKtSQxPw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JlRxRy_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JlRxSC_REeqNRJUKtSQxPw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JlRxSS_REeqNRJUKtSQxPw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JlRxSi_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JlRxSy_REeqNRJUKtSQxPw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JlRxQS_REeqNRJUKtSQxPw" name="EJB3">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JlRxQi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Iziw0E0CEeaqg889t57Luw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_JlRxQy_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_MutWcMiMEee6JIMjhFx77g" name="ejb3" nsURI="http://www.samsarasoftware.net/ejb3.profile" nsPrefix="ejb3">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MutWdsiMEee6JIMjhFx77g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MutWd8iMEee6JIMjhFx77g" key="Version" value="0.1.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MutWeMiMEee6JIMjhFx77g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MutWeciMEee6JIMjhFx77g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MutWesiMEee6JIMjhFx77g" key="Date" value="2017-11-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MutWe8iMEee6JIMjhFx77g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_MutWcciMEee6JIMjhFx77g" name="EJB3">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MutWcsiMEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Iziw0E0CEeaqg889t57Luw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MutWc8iMEee6JIMjhFx77g" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_dPPPkFc4EeeatsJTvGgPfw" name="ejb3" nsURI="http://www.samsarasoftware.net/ejb3.profile" nsPrefix="ejb3">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dPQdsVc4EeeatsJTvGgPfw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dPQdslc4EeeatsJTvGgPfw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dPQds1c4EeeatsJTvGgPfw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dPQdtFc4EeeatsJTvGgPfw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dPQdtVc4EeeatsJTvGgPfw" key="Date" value="2017-06-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dPQdtlc4EeeatsJTvGgPfw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dPPPkVc4EeeatsJTvGgPfw" name="ejb3">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dPPPklc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Iziw0E0CEeaqg889t57Luw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dPPPk1c4EeeatsJTvGgPfw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_IZhHQE0CEeaqg889t57Luw" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Iziw0E0CEeaqg889t57Luw" name="EJB3">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JZunEU0CEeaqg889t57Luw" name="base_Component" association="_JZtY8E0CEeaqg889t57Luw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_JZtY8E0CEeaqg889t57Luw" name="E_ejb3_Component1" memberEnd="_JZunEE0CEeaqg889t57Luw _JZunEU0CEeaqg889t57Luw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_JZunEE0CEeaqg889t57Luw" name="extension_ejb3" type="_Iziw0E0CEeaqg889t57Luw" aggregation="composite" association="_JZtY8E0CEeaqg889t57Luw"/>
+  </packagedElement>
+</uml:Profile>

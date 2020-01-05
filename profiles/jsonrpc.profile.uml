@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yLUbgFy_EearzZIP1Fd9cA" name="jsonrpc" URI="http://www.samsarasoftware.net/jsonrpc.profile" metaclassReference="_b-NycVW0Eea7DKdewb94SQ _dv-H8Ff5EeaVisjvudOgMQ __d5gsFgxEeaKtvzRy5C7xA _kVD-EDZPEee3OrfIzcxQ-g">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bjfBADuwEee1KeL31JPezw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_DcjYIC_UEeqhmYkp_yv4BA" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYIS_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6IC_REeqNRJUKtSQxPw"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_cZ2_sC_TEeqrGbciM_OSjQ"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dcl0YC_UEeqhmYkp_yv4BA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dcl0YS_UEeqhmYkp_yv4BA" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dcl0Yi_UEeqhmYkp_yv4BA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dcl0Yy_UEeqhmYkp_yv4BA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dcl0ZC_UEeqhmYkp_yv4BA" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dcl0ZS_UEeqhmYkp_yv4BA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYIi_UEeqhmYkp_yv4BA" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYIy_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6Ry_REeqNRJUKtSQxPw"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_DcjYJC_UEeqhmYkp_yv4BA" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYJy_UEeqhmYkp_yv4BA" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYKC_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_DcjYIi_UEeqhmYkp_yv4BA"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_cZ2_2i_TEeqrGbciM_OSjQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYKy_UEeqhmYkp_yv4BA" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYLC_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6MS_REeqNRJUKtSQxPw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYLi_UEeqhmYkp_yv4BA" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYLy_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_cZ2_yS_TEeqrGbciM_OSjQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYMS_UEeqhmYkp_yv4BA" name="JsonRpcOverHttp" eSuperTypes="_DcjYLi_UEeqhmYkp_yv4BA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYMi_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DcjYNC_UEeqhmYkp_yv4BA" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYNS_UEeqhmYkp_yv4BA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYNi_UEeqhmYkp_yv4BA" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYNy_UEeqhmYkp_yv4BA" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DcjYOC_UEeqhmYkp_yv4BA" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_DcjYOS_UEeqhmYkp_yv4BA" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DcjYOi_UEeqhmYkp_yv4BA" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6JS_REeqNRJUKtSQxPw"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_OyW6IS_REeqNRJUKtSQxPw"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_E7zXIB_rEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXIR_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXPR_rEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXPh_rEeqPY7GM6Sjy4A" key="Version" value="0.1.19"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXPx_rEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXQB_rEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXQR_rEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXQh_rEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXIh_rEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXIx_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_E7zXJB_rEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXJx_rEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXKB_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_E7zXIh_rEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXKx_rEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXLB_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXLh_rEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXLx_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXMR_rEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_E7zXLh_rEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXMh_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E7zXNB_rEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXNR_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXNh_rEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXNx_rEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E7zXOB_rEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_E7zXOR_rEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E7zXOh_rEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_eT2Z8B_qEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2Z8R_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aDR_qEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aDh_qEeqPY7GM6Sjy4A" key="Version" value="0.1.18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aDx_qEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aEB_qEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aER_qEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aEh_qEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2Z8h_qEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2Z8x_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_eT2Z9B_qEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2Z9x_qEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2Z-B_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_eT2Z8h_qEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2Z-x_qEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2Z_B_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2Z_h_qEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2Z_x_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2aAR_qEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_eT2Z_h_qEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aAh_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eT2aBB_qEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aBR_qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aBh_qEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aBx_qEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eT2aCB_qEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_eT2aCR_qEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT2aCh_qEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_6mQHUB_kEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHUR_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHbR_kEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHbh_kEeqPY7GM6Sjy4A" key="Version" value="0.1.17"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHbx_kEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHcB_kEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHcR_kEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHch_kEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHUh_kEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHUx_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6mQHVB_kEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHVx_kEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHWB_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_6mQHUh_kEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHWx_kEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHXB_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHXh_kEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHXx_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHYR_kEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_6mQHXh_kEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHYh_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6mQHZB_kEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHZR_kEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHZh_kEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHZx_kEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6mQHaB_kEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_6mQHaR_kEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6mQHah_kEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_J0a-QB9vEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-QR9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-XR9vEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-Xh9vEeqPY7GM6Sjy4A" key="Version" value="0.1.16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-Xx9vEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-YB9vEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-YR9vEeqPY7GM6Sjy4A" key="Date" value="2019-12-15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-Yh9vEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-Qh9vEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Qx9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_J0a-RB9vEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-Rx9vEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-SB9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_J0a-Qh9vEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-Sx9vEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-TB9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-Th9vEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Tx9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-UR9vEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_J0a-Th9vEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Uh9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_J0a-VB9vEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-VR9vEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Vh9vEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Vx9vEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J0a-WB9vEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_J0a-WR9vEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J0a-Wh9vEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_le1FQB9uEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FQR9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FXR9uEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FXh9uEeqPY7GM6Sjy4A" key="Version" value="0.1.15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FXx9uEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FYB9uEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FYR9uEeqPY7GM6Sjy4A" key="Date" value="2019-12-15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FYh9uEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FQh9uEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FQx9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_le1FRB9uEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FRx9uEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FSB9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_le1FQh9uEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FSx9uEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FTB9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FTh9uEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FTx9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FUR9uEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_le1FTh9uEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FUh9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_le1FVB9uEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FVR9uEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FVh9uEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FVx9uEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_le1FWB9uEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_le1FWR9uEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_le1FWh9uEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_zgyg8B9qEeqPY7GM6Sjy4A" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyg8R9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgzvEB9qEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgzvER9qEeqPY7GM6Sjy4A" key="Version" value="0.1.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgzvEh9qEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgzvEx9qEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgzvFB9qEeqPY7GM6Sjy4A" key="Date" value="2019-12-15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgzvFR9qEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyg8h9qEeqPY7GM6Sjy4A" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyg8x9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_zgyg9B9qEeqPY7GM6Sjy4A" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyg9x9qEeqPY7GM6Sjy4A" name="JsonRpcOverHttpBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyg-B9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="#_zgyg8h9qEeqPY7GM6Sjy4A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsUB0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyg-x9qEeqPY7GM6Sjy4A" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyg_B9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyg_h9qEeqPY7GM6Sjy4A" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyg_x9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyhAR9qEeqPY7GM6Sjy4A" name="JsonRpcOverHttp" eSuperTypes="_zgyg_h9qEeqPY7GM6Sjy4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyhAh9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zgyhBB9qEeqPY7GM6Sjy4A" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyhBR9qEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyhBh9qEeqPY7GM6Sjy4A" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyhBx9qEeqPY7GM6Sjy4A" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zgyhCB9qEeqPY7GM6Sjy4A" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_zgyhCR9qEeqPY7GM6Sjy4A" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zgyhCh9qEeqPY7GM6Sjy4A" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_JTpisB3eEeqp5clWmz6TNw" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpisR3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsIB0PEeqbfLQ3ZXLuvg"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTrX4B3eEeqp5clWmz6TNw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTrX4R3eEeqp5clWmz6TNw" key="Version" value="0.1.13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTrX4h3eEeqp5clWmz6TNw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTrX4x3eEeqp5clWmz6TNw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTrX5B3eEeqp5clWmz6TNw" key="Date" value="2019-12-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTrX5R3eEeqp5clWmz6TNw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpish3eEeqp5clWmz6TNw" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpisx3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_JTpitB3eEeqp5clWmz6TNw" name="base_binding" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JTpith3eEeqp5clWmz6TNw" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_JTpiuB3eEeqp5clWmz6TNw" name="location" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpiuh3eEeqp5clWmz6TNw" name="JsonRpcOverHttpBinding" eSuperTypes="_JTpish3eEeqp5clWmz6TNw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpiux3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpivR3eEeqp5clWmz6TNw" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpivh3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpiwB3eEeqp5clWmz6TNw" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpiwR3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_aZJsQh0PEeqbfLQ3ZXLuvg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpiwx3eEeqp5clWmz6TNw" name="JsonRpcOverHttp" eSuperTypes="_JTpiwB3eEeqp5clWmz6TNw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpixB3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_JTpixh3eEeqp5clWmz6TNw" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpixx3eEeqp5clWmz6TNw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpiyB3eEeqp5clWmz6TNw" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpiyR3eEeqp5clWmz6TNw" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTpiyh3eEeqp5clWmz6TNw" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_JTpiyx3eEeqp5clWmz6TNw" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTpizB3eEeqp5clWmz6TNw" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_nKXQwES2Eem4X_t1lI5PbA" name="jsonrpc" nsURI="http://www.samsarasoftware.net/jsonrpc.profile" nsPrefix="jsonrpc">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdQUS8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2MMAaEeiT7dMUKY9KBQ"/>
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_6UKPYMAgEeix_NPOyl8Y5g"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdYES8Eem2i5PzP09wdQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdYUS8Eem2i5PzP09wdQ" key="Version" value="0.1.12"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdYkS8Eem2i5PzP09wdQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdY0S8Eem2i5PzP09wdQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdZES8Eem2i5PzP09wdQ" key="Date" value="2019-03-12"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdZUS8Eem2i5PzP09wdQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdQkS8Eem2i5PzP09wdQ" name="JsonRpcBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdQ0S8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2YXdRES8Eem2i5PzP09wdQ" name="base_binding" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2V8AaEeiT7dMUKY9KBQ"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_2YXdRkS8Eem2i5PzP09wdQ" name="version" ordered="false" lowerBound="1" defaultValueLiteral="2.0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_2YXdSES8Eem2i5PzP09wdQ" name="location" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdSkS8Eem2i5PzP09wdQ" name="JsonRpcOverHttpBinding" eSuperTypes="_2YXdQkS8Eem2i5PzP09wdQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdS0S8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_v1Y5MHCQEee2gqQ6lpcoZQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdTUS8Eem2i5PzP09wdQ" name="JsonRpcGeneralEndpoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdTkS8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9gJu4HEmEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2QcAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdUES8Eem2i5PzP09wdQ" name="JsonRpcOverHttpGeneralEndpoint" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdUUS8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ES2KsHEnEeeWMbBlK_TBBg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_6UKPgsAgEeix_NPOyl8Y5g"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdU0S8Eem2i5PzP09wdQ" name="JsonRpcOverHttp" eSuperTypes="_2YXdUES8Eem2i5PzP09wdQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdVES8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0H9HUFy_EearzZIP1Fd9cA"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2YXdVkS8Eem2i5PzP09wdQ" name="JsonRpcGeneralBinding">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdV0S8Eem2i5PzP09wdQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D3e5UESzEemARK9-3XtqLg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdWES8Eem2i5PzP09wdQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdWUS8Eem2i5PzP09wdQ" source="base_Port">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YXdWkS8Eem2i5PzP09wdQ" key="lowerBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_2YXdW0S8Eem2i5PzP09wdQ" name="base_Port" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YXdXES8Eem2i5PzP09wdQ" source="redefines">
+              <references xmi:type="ecore:EReference" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2NcAaEeiT7dMUKY9KBQ"/>
+            </eAnnotations>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eSuperTypes xmi:type="ecore:EClass" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_B3C2McAaEeiT7dMUKY9KBQ"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_5FGbUFWvEea7DKdewb94SQ" alias="Element">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_b-NycFW0Eea7DKdewb94SQ" alias="Classifier">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_b-NycVW0Eea7DKdewb94SQ" alias="Operation">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_b-OZgFW0Eea7DKdewb94SQ" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_dv-H8Ff5EeaVisjvudOgMQ" alias="Port">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="__d5gsFgxEeaKtvzRy5C7xA" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="__d6HwFgxEeaKtvzRy5C7xA" alias="Interface">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_kVD-EDZPEee3OrfIzcxQ-g" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_i_r5cHCNEee4tJqfwRNaaQ">
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_2I1egFWvEea7DKdewb94SQ"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_u5lYQHCQEee2gqQ6lpcoZQ" name="JsonRpcBinding">
+    <generalization xmi:type="uml:Generalization" xmi:id="_oBoWAB9qEeqPY7GM6Sjy4A">
+      <general xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_pbTZ8Fg2EeaKtvzRy5C7xA"/>
+    </generalization>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_05DAUHCQEee2gqQ6lpcoZQ" name="version">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_5e9bgHCQEee2gqQ6lpcoZQ" value="2.0"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_v1Y5MHCQEee2gqQ6lpcoZQ" name="JsonRpcOverHttpBinding">
+    <generalization xmi:type="uml:Generalization" xmi:id="_xoE-0HCQEee2gqQ6lpcoZQ" general="_u5lYQHCQEee2gqQ6lpcoZQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_nD2fIB9qEeqPY7GM6Sjy4A">
+      <general xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_X5w2YDuyEee0H6-bOzo5iw"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_9gJu4HEmEeeWMbBlK_TBBg" name="JsonRpcGeneralEndpoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_GtiEcHEnEeeWMbBlK_TBBg">
+      <general xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_8BlakFWvEea7DKdewb94SQ"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ES2KsHEnEeeWMbBlK_TBBg" name="JsonRpcOverHttpGeneralEndpoint" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_HGYCQHEnEeeWMbBlK_TBBg">
+      <general xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/http.profile.uml#_kpWEoFW2Eea7DKdewb94SQ"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_0H9HUFy_EearzZIP1Fd9cA" name="JsonRpcOverHttp">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5eu-QHHeEeeCU9vEdxSNUw" general="_ES2KsHEnEeeWMbBlK_TBBg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_D3e5UESzEemARK9-3XtqLg" name="JsonRpcGeneralBinding">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Hg9hcESzEemARK9-3XtqLg">
+      <general xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_6zLtwFWvEea7DKdewb94SQ"/>
+    </generalization>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mD8bQES2Eem4X_t1lI5PbA" name="base_Port" association="_mD4w4ES2Eem4X_t1lI5PbA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_mD4w4ES2Eem4X_t1lI5PbA" name="E_JsonRpcGeneralBinding_Port1" memberEnd="_mD70MES2Eem4X_t1lI5PbA _mD8bQES2Eem4X_t1lI5PbA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_mD70MES2Eem4X_t1lI5PbA" name="extension_JsonRpcGeneralBinding" type="_D3e5UESzEemARK9-3XtqLg" aggregation="composite" association="_mD4w4ES2Eem4X_t1lI5PbA"/>
+  </packagedElement>
+</uml:Profile>

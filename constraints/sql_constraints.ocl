@@ -1,0 +1,671 @@
+/*-
+ * #%L
+ * net.samsarasoftware.metamodels
+ * %%
+ * Copyright (C) 2014 - 2017 Pere Joseph Rodriguez
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ * #L%
+ */
+import  uml : 'http://www.eclipse.org/uml2/5.0.0/UML' 
+
+package uml
+
+
+context Element
+
+
+
+def: getUpperBound(property : Property) : String = if(property.upperValue.oclIsUndefined())then  '1' else property.upperValue.stringValue() endif 
+
+def: getLowerBound(property : Property) : String = if(property.lowerValue.oclIsUndefined())then  '1' else property.lowerValue.stringValue() endif
+
+
+def: getOpposite(column : Property) : Property = 
+	if(not(column.association.oclIsUndefined())) then column.association.memberEnd->select( m | m.oclAsType(Property).name <> column.name )->asSequence()->first() else null endif
+
+def: getContainingComponent(elem : Element) : Component =  
+	if( not(elem.owner.oclIsUndefined()) ) then
+		if(elem.owner.oclIsTypeOf(Component)) then  
+			elem.owner.oclAsType(Component)
+		else
+			getContainingComponent( elem.owner )
+		endif
+	else
+		elem.owner.oclAsType(Component)
+	endif
+
+def: isInEntityComponent(elem: Element) : Boolean =
+let container:uml::Component=getContainingComponent(elem) in
+let cc:uml::Component=getContainingComponent(container) in
+if(container.getAppliedStereotype('StandardProfile::Entity').oclIsUndefined()) then
+	if(cc.oclIsUndefined()) then
+		false
+	else
+		isInEntityComponent(container)
+	endif
+else
+	true
+endif
+
+
+
+
+def: isError(veredict : Boolean) : Boolean = if veredict then null else true endif
+
+def: isWarning(veredict : Boolean) : Boolean = if veredict then false else true endif
+
+def: topEntityGeneralization(eclasses : Collection(Classifier)):Collection(Generalization)= 
+	eclasses->collect(eclass |	
+		if(not(eclass.general->size()=0)) then  
+			topEntityGeneralization_2(eclass.generalization , eclasses, Sequence{})
+		else
+			Sequence{}
+		endif
+	)
+
+def: topEntityGeneralization_2(eclasses : Collection(Generalization) , original: Collection(Classifier), last:Collection(Generalization)):Collection(Generalization)= 
+	eclasses->collect(eclass |	
+		if(not(eclass.general.generalization->size()=0)) then  
+			topEntityGeneralization_2(eclass.general.generalization,original,Sequence{eclass})
+		else
+			if(not(original->includes(eclass.general)) ) then 
+				if(
+					not(getContainingComponent(eclass.general).oclAsType(Component).getAppliedStereotype('StandardProfile::Entity').oclIsUndefined())
+					and eclass.general.oclIsKindOf(Class)
+				) then
+					Sequence{eclass}
+				else
+					if(
+						not(original->includes(eclass.specific))
+						and not(getContainingComponent(eclass.specific).oclAsType(Component).getAppliedStereotype('StandardProfile::Entity').oclIsUndefined())
+						and last->size()>0
+						and last->any(true).specific.oclIsKindOf(Class)
+					) then
+						last
+					else
+						Sequence{}
+					endif
+				endif 
+			else 
+				Sequence{} 
+			endif
+		endif
+	)
+
+def: case6(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and 
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case5(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case7(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case8(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case10(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case11(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+ 
+def: case18(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case17(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case19(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case20(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case22(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case23(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case30(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+def: case29(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+def: case36(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case35(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case42 (column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case41(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case48(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case47(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::composite
+	and column.type.oclIsTypeOf(Class)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Class)
+
+
+def: case54(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Association)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case53(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case55(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case56(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='1' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case58(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Association)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case59(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case66(column:Property) : Boolean = 
+getUpperBound(column)='1' 
+and getLowerBound(column)='1' 
+and column.owner.oclIsTypeOf(Class)
+and column.aggregation =AggregationKind::none
+and column.type.oclIsTypeOf(Enumeration)
+and column.owner.oclIsTypeOf(Class)
+
+and
+getUpperBound(getOpposite(column))='*' 
+and getLowerBound(getOpposite(column))='0' 
+ and getOpposite(column).aggregation =AggregationKind::shared 
+and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case65(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='1' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: case72(column:Property) : Boolean = 
+	getUpperBound(column)='1' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::none
+	and column.type.oclIsTypeOf(Enumeration)
+	and column.owner.oclIsTypeOf(Class)
+	
+	and getUpperBound(getOpposite(column)) = '*' 
+	and getLowerBound(getOpposite(column))='0' 
+	and getOpposite(column).aggregation =AggregationKind::shared 
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+def: case71(column:Property) : Boolean = 
+	getUpperBound(column)='*' 
+	and getLowerBound(column)='0' 
+	and column.owner.oclIsTypeOf(Class)
+	and column.aggregation =AggregationKind::shared
+	and column.type.oclIsTypeOf(Enumeration)
+	and
+	getUpperBound(getOpposite(column))='1' 
+	and getLowerBound(getOpposite(column))='0' 
+	 and getOpposite(column).aggregation =AggregationKind::none 
+	and getOpposite(column).owner.oclIsTypeOf(Enumeration)
+	and getOpposite(column).type.oclIsTypeOf(Class)
+
+
+def: alterB(column :Property) : Boolean = 
+				case5(column)
+				 or case6(column)
+				 or case17(column)
+				 or case18(column)
+				 or case29(column)
+				 or case30(column) 
+				 or case35(column)
+				 or case36(column)
+				 or case41(column)
+				 or case42(column)
+				 or case47(column)
+				 or case48(column)
+				 or case53(column)
+				 or case54(column)
+
+def: alterA(column :Property) : Boolean = 
+				case7(column)
+				 or case8(column)
+				 or case10(column)
+				 or case11(column)
+				 or case19(column)
+				 or case20(column) 
+				 or case22(column) 
+				 or case23(column) 
+				 or case55(column) 
+				 or case56(column) 
+				 or case58(column) 
+				 or case59(column) 
+				 or case66(column)
+				 or case72(column)
+
+
+-------------Change of context
+context Association
+
+inv MtoNNotAllowed ('M to N associations may be modelled as two 1.* associations'): isError( 
+		memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+		and  memberEnd->forAll(e | e.upper<>1)
+)
+
+inv AggregationAtOneSideMinimum ('An association must have at least one side with aggregation shared or composite'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->forAll(e | e.aggregation=AggregationKind::none)
+)
+
+inv OneToOne ('One side of the association may be 0..1 to be built'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->forAll(e | e.lower=1)
+)
+
+inv VisibilityToOne ('The side with lower=1 may be owned by a classifier'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->exists(e | e.lower=1 and e.owner.oclIsKindOf(Association))
+)
+
+inv ZeroOneZeroOneVisible ('The column with aggregation may be owned by a classifier'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->forAll(e | e.lower=0 and e.upper=1) and memberEnd->exists(e | e.aggregation<>AggregationKind::none and e.owner.oclIsKindOf(Association))
+)
+
+inv OneToOneMany('1..* multiplicity may be 0..1 because of SQL limitations'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->exists(e| e.lower=1 and e.upper<>1)
+)
+
+inv ToManyVisibility('Opposite memberEnd to that of multiplicity 0.* may be owned by a classifier'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->exists(e| e.upper<>1 and getOpposite(e).owner.oclIsKindOf(Association))
+)
+
+
+	---- singleTableInheritance warnings on associations
+inv SingleTableInheritanceModifiesMultiplicity1('Member End with multiplicity 1 will be modified to 0.1 due to singleTableInheritance'):isWarning(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->exists(column | 
+		column.type.oclIsKindOf(Class)
+		and column.type.oclAsType(Class).generalization->size()>0 
+		and column.type.oclAsType(Class).generalization->exists(c |  c.oclAsType(Classifier).getAppliedStereotype('database::joinedTableInheritance').oclIsUndefined() )
+		and (case5(column) or case6(column) or case7(column) or case8(column) or case17(column) or case18(column) or case19(column) or case20(column) or case29(column) or case30(column) or case41(column) or case42(column))
+	)	
+)
+
+inv NotAllowedEntityAssociation('This association will not be realized because is not allowed by production rules.'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and not(self.memberEnd->exists(e: uml::Property  | alterA(e) or alterB(e)))
+)
+
+
+inv ManySideMayBeAggregated('The member of the association with multiplicity * may be the aggregated side'): isError(
+	memberEnd->select(e | isInEntityComponent(e.type))->size()=2 
+	and memberEnd->exists(e| e.upper<>1 and e.aggregation=AggregationKind::none )
+)
+
+-------------Change of context
+context Generalization
+
+inv SameInheritanceTypeAmongHierarchy ('May have same inheritance type among hierarchy'): isError(
+	(isInEntityComponent(self.general) or isInEntityComponent(self.specific))
+	and if(not(self.getAppliedStereotype('database::singleTableInheritance').oclIsUndefined())) then 
+		if(self.general.generalization->size()=0) then 
+			false
+		else
+			self.general.generalization->exists(g | g.getAppliedStereotype('database::singleTableInheritance').oclIsUndefined())
+		endif
+			
+	else 
+		if(not(self.getAppliedStereotype('database::joinedTableInheritance').oclIsUndefined())) then 
+			if(self.general.generalization->size()=0) then 
+				false
+			else
+				self.general.generalization->exists(g | g.getAppliedStereotype('database::joinedTableInheritance').oclIsUndefined())
+			endif
+		else
+			if(self.general.generalization->size()=0) then 
+				false
+			else
+				self.general.generalization->exists(g | not(g.getAppliedStereotype('database::joinedTableInheritance').oclIsUndefined()) or not(g.getAppliedStereotype('database::singleTableInheritance').oclIsUndefined())  )
+			endif	
+		endif
+	endif)
+
+inv OnlyTopSingleTableMayHavePrimaryKey('Only root class of singleTableInheritance hierarchy may have primaryKey'):isError(
+	(isInEntityComponent(self.general) or isInEntityComponent(self.specific))
+	and if(
+		topEntityGeneralization(Sequence{self.specific})->size()>0 
+		and topEntityGeneralization(Sequence{self.specific})->exists(g | not(g.oclAsType(Generalization).getAppliedStereotype('database::singleTableInheritance').oclIsUndefined()))
+		and specific.oclIsKindOf(Class) ) then
+			specific.oclAsType(Class).ownedAttribute->exists(a | not(a.getAppliedStereotype('database::primaryKey').oclIsUndefined()))
+		else
+			false
+		endif 
+	)
+ 
+ inv EveryJoinedTableMayHavePrimaryKey ('Every class of a joinedTableInheritance hierarchy may have a primaryKey'):isError(
+	(isInEntityComponent(general) or isInEntityComponent(specific))
+	and if(
+		not(getAppliedStereotype('database::joinedTableInheritance').oclIsUndefined())
+		and specific.oclIsKindOf(Class)  ) then
+			 
+				specific.oclAsType(Class).ownedAttribute->select(
+					a | not(a.getAppliedStereotype('database::primaryKey').oclIsUndefined())
+				)->size()=0
+			
+		else
+			false
+		endif
+	)
+
+inv InheritanceRootTableMayHavePrimaryKey('The root class of a inheritance hierarchy may have a primaryKey'):isError(
+	(isInEntityComponent(self.general) or isInEntityComponent(self.specific))
+	and if(
+		topEntityGeneralization(Sequence{self.specific})->size()<>0 
+		and	 
+				topEntityGeneralization(Sequence{self.specific})->exists(g | g.general.oclAsType(Class).ownedAttribute->select(
+					a | not(a.getAppliedStereotype('database::primaryKey').oclIsUndefined())
+				)->size()=0)
+			
+	) then
+		true
+	else
+		false
+	endif
+)
+
+endpackage

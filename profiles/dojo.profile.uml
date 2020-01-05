@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_kwJy8FTUEeacavzHSYg3RA" name="dojo" URI="http://www.samsarasoftware.net/dojo.profile" metaclassReference="_nBBpYFTUEeacavzHSYg3RA _kdnYEB_rEeqPY7GM6Sjy4A">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NTNWMMiCEeepdde1Z9DI5A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_GfkkkC_REeqNRJUKtSQxPw" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GfkknS_REeqNRJUKtSQxPw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Gfkkni_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Gfkkny_REeqNRJUKtSQxPw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GfkkoC_REeqNRJUKtSQxPw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GfkkoS_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Gfkkoi_REeqNRJUKtSQxPw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GfkkkS_REeqNRJUKtSQxPw" name="Dojotoolkit">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Gfkkki_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Gfkkky_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GfkklS_REeqNRJUKtSQxPw" name="Theme">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Gfkkli_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_k96owB_rEeqPY7GM6Sjy4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Gfkkly_REeqNRJUKtSQxPw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GfkkmS_REeqNRJUKtSQxPw" name="name" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_6DpFUB_rEeqPY7GM6Sjy4A" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DpFXR_rEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DpFXh_rEeqPY7GM6Sjy4A" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DpFXx_rEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DpFYB_rEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DpFYR_rEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DpFYh_rEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6DpFUR_rEeqPY7GM6Sjy4A" name="Dojotoolkit">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DpFUh_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6DpFUx_rEeqPY7GM6Sjy4A" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6DpFVR_rEeqPY7GM6Sjy4A" name="Theme">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DpFVh_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_k96owB_rEeqPY7GM6Sjy4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6DpFVx_rEeqPY7GM6Sjy4A" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6DpFWR_rEeqPY7GM6Sjy4A" name="name" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_oyGsEB_rEeqPY7GM6Sjy4A" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyGsHR_rEeqPY7GM6Sjy4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyGsHh_rEeqPY7GM6Sjy4A" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyGsHx_rEeqPY7GM6Sjy4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyGsIB_rEeqPY7GM6Sjy4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyGsIR_rEeqPY7GM6Sjy4A" key="Date" value="2019-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyGsIh_rEeqPY7GM6Sjy4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_oyGsER_rEeqPY7GM6Sjy4A" name="Dojotoolkit">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyGsEh_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_oyGsEx_rEeqPY7GM6Sjy4A" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_oyGsFR_rEeqPY7GM6Sjy4A" name="Theme">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyGsFh_rEeqPY7GM6Sjy4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_k96owB_rEeqPY7GM6Sjy4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_oyGsFx_rEeqPY7GM6Sjy4A" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_oyGsGR_rEeqPY7GM6Sjy4A" name="name" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_O-wtgMiMEee6JIMjhFx77g" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O-wthsiMEee6JIMjhFx77g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-wth8iMEee6JIMjhFx77g" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-wtiMiMEee6JIMjhFx77g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-wticiMEee6JIMjhFx77g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-wtisiMEee6JIMjhFx77g" key="Date" value="2017-11-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-wti8iMEee6JIMjhFx77g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_O-wtgciMEee6JIMjhFx77g" name="Dojotoolkit">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O-wtgsiMEee6JIMjhFx77g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_O-wtg8iMEee6JIMjhFx77g" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_NTPycMiCEeepdde1Z9DI5A" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NTS1wMiCEeepdde1Z9DI5A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NTS1wciCEeepdde1Z9DI5A" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NTS1wsiCEeepdde1Z9DI5A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NTS1w8iCEeepdde1Z9DI5A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NTS1xMiCEeepdde1Z9DI5A" key="Date" value="2017-11-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NTS1xciCEeepdde1Z9DI5A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NTPycciCEeepdde1Z9DI5A" name="Dojo">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NTPycsiCEeepdde1Z9DI5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NTPyc8iCEeepdde1Z9DI5A" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pEKl0FTUEeacavzHSYg3RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_a-ulgFc4EeeatsJTvGgPfw" name="dojo" nsURI="http://www.samsarasoftware.net/dojo.profile" nsPrefix="dojo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a-y28Fc4EeeatsJTvGgPfw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a-y28Vc4EeeatsJTvGgPfw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a-y28lc4EeeatsJTvGgPfw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a-y281c4EeeatsJTvGgPfw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a-y29Fc4EeeatsJTvGgPfw" key="Date" value="2017-06-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a-y29Vc4EeeatsJTvGgPfw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_a-ulgVc4EeeatsJTvGgPfw" name="dojo">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a-ulglc4EeeatsJTvGgPfw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_npv2QFTUEeacavzHSYg3RA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_a-ulg1c4EeeatsJTvGgPfw" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_nBBpYFTUEeacavzHSYg3RA" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_kdnYEB_rEeqPY7GM6Sjy4A" alias="UseCase">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_npv2QFTUEeacavzHSYg3RA" name="Dojotoolkit">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oT_tIVTUEeacavzHSYg3RA" name="base_Component" association="_oT_GEFTUEeacavzHSYg3RA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_oT_GEFTUEeacavzHSYg3RA" name="E_Dojotoolkit_Component1" memberEnd="_oT_tIFTUEeacavzHSYg3RA _oT_tIVTUEeacavzHSYg3RA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_oT_tIFTUEeacavzHSYg3RA" name="extension_Dojotoolkit" type="_npv2QFTUEeacavzHSYg3RA" aggregation="composite" association="_oT_GEFTUEeacavzHSYg3RA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_k96owB_rEeqPY7GM6Sjy4A" name="Theme">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_l-PdUh_rEeqPY7GM6Sjy4A" name="base_UseCase" association="_l-PdUB_rEeqPY7GM6Sjy4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mXj8QB_rEeqPY7GM6Sjy4A" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_l-PdUB_rEeqPY7GM6Sjy4A" name="E_Theme_UseCase1" memberEnd="_l-PdUR_rEeqPY7GM6Sjy4A _l-PdUh_rEeqPY7GM6Sjy4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_l-PdUR_rEeqPY7GM6Sjy4A" name="extension_Theme" type="_k96owB_rEeqPY7GM6Sjy4A" aggregation="composite" association="_l-PdUB_rEeqPY7GM6Sjy4A"/>
+  </packagedElement>
+</uml:Profile>

@@ -1,0 +1,102 @@
+/*-
+ * #%L
+ * net.samsarasoftware.metamodels
+ * %%
+ * Copyright (C) 2014 - 2017 Pere Joseph Rodriguez
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ * #L%
+ */
+import  uml : 'http://www.eclipse.org/uml2/5.0.0/UML' 
+
+
+
+package uml
+
+context Element
+
+
+def: getParentSubsystemImplementComponent(elem : Element) : Component =  
+	if( not(elem.owner.oclIsUndefined())) then
+		if(elem.owner.oclIsTypeOf(Component) 
+			and not(elem.owner.getAppliedStereotype('StandardProfile::Implement').oclIsUndefined())
+			and not(elem.owner.getAppliedStereotype('StandardProfile::Subsystem').oclIsUndefined())	
+		) then  
+			elem.owner.oclAsType(Component)
+		else
+			getParentSubsystemImplementComponent( elem.owner )
+		endif
+	else
+		null
+	endif
+
+def: getParentSubsystemServiceComponent(elem : Element) : Component =  
+	if( not(elem.owner.oclIsUndefined())) then
+		if(elem.owner.oclIsTypeOf(Component) 
+			and not(elem.owner.getAppliedStereotype('StandardProfile::Service').oclIsUndefined())
+		) then  
+			if(
+				not(getParentSubsystemImplementComponent(elem).oclIsUndefined())
+			) then
+				elem.owner.oclAsType(Component) 
+			else
+				null
+			endif
+		else
+			getParentSubsystemServiceComponent ( elem.owner )
+		endif
+	else
+		null
+	endif
+
+
+def: isError(veredict : Boolean) : Boolean = if veredict then null else true endif
+
+def: isWarning(veredict : Boolean) : Boolean = if veredict then false else true endif
+
+
+-------------Change of context
+context Property
+
+
+/*  
+
+		
+		*/
+		
+inv DefaultValueNeeded ('A default value may be defined to generate code'): isError(
+let serviceComponent:uml::Component = getParentSubsystemServiceComponent(self)  in
+   self.owner.oclIsTypeOf(uml::Class) 
+	and not(serviceComponent.oclIsUndefined()) 
+	and not(self.isDerived) 
+	and (
+			not(self.defaultValue.oclIsUndefined())
+			and self.defaultValue.oclAsType(OpaqueExpression)._body->oclIsUndefined()
+		)
+)
+
+inv DefaultValuePrimaryType ('A default value should be a primary type or enum'): isWarning(
+let serviceComponent:uml::Component = getParentSubsystemServiceComponent(self)  in
+   self.owner.oclIsTypeOf(uml::Class) 
+	and not(serviceComponent.oclIsUndefined()) 
+	and not (
+		self.type.oclIsKindOf(Enumeration)
+		or self.type.name='String'
+		or self.type.name='Real'
+		or self.type.name='UnlimitedNatural'
+		or self.type.name='Boolean'
+		or self.type.name='Integer'
+		or not ( self.type.getAppliedStereotype('StandardProfile::Type').oclIsUndefined()) 
+	) 
+)
+endpackage
