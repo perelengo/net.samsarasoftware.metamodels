@@ -107,7 +107,7 @@
 						<configuration>
 							<resources>
 								<resource>
-									<directory>${env.SAMSARASOFTWARE_WORKSPACE_DIR}/net.samsarasoftware/src/license/</directory>
+									<directory>${basedir}/../net.samsarasoftware/src/license/</directory>
 									<include>THIRD-PARTY.properties</include>
 									<filtering>true</filtering>
 								</resource>
@@ -124,7 +124,7 @@
 						<configuration>
 							<resources>
 								<resource>
-									<directory>${env.SAMSARASOFTWARE_WORKSPACE_DIR}/net.samsarasoftware/net.samsarasoftware.metamodels/profiles/</directory>
+									<directory>${basedir}/profiles/</directory>
 								</resource>
 							</resources>
 							<outputDirectory>target/classes/profiles</outputDirectory>
@@ -134,15 +134,48 @@
 			</plugin>
 
 
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>license-maven-plugin</artifactId> 
-				<version>1.12</version> <executions> <execution> <id>first</id> <goals> <goal>update-file-header</goal> 
-				</goals> <phase>process-sources</phase> <configuration> <extraExtensions> 
-				<ocl>java</ocl> <uml>xml</uml> <di>xml</di> <notation>xml</notation> </extraExtensions> 
-				<licenseName>apache_v2</licenseName> <roots> <root>src</root> <root>profiles</root> 
-				<root>constraints</root> </roots> </configuration> </execution> </executions> 
-				</plugin> -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.12</version>
+				<executions>
+					<execution>
+						<id>first</id>
+						<goals>
+							<goal>update-file-header</goal>
+						</goals>
+						<phase>process-sources</phase>
+						<configuration>
+							<extraExtensions>
+								<ocl>java</ocl>
+								<uml>xml</uml>
+								<di>xml</di>
+								<notation>xml</notation>
+							</extraExtensions>
+							<licenseName>apache_v2</licenseName>
+							<roots>
+								<root>src</root>
+								<root>profiles</root>
+								<root>constraints</root>
+							</roots>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin> 
 		</plugins>
 	</build>
+	
+	<scm>
+		<developerConnection>scm:git:git://github.com/perelengo/net.samsarasoftware.metamodels.git</developerConnection>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>maven3.samsara-software.es</id>
+			<url>scpexe://maven3.samsara-software.es:22/home/samsara-software/domains/maven3.samsara-software.es/repository</url>
+		</repository>
+	</distributionManagement>
+	
+		
 	<profiles>
 		<profile>
 			<id>generateGenModel</id>
