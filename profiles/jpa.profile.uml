@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_I_SBIE2OEeaQue6oqchKAA" name="jpa" URI="http://www.samsarasoftware.net/jpa.profile" metaclassReference="_Kcdw0E2OEeaQue6oqchKAA">
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_I_SBIE2OEeaQue6oqchKAA" name="jpa" URI="http://www.samsarasoftware.net/jpa.profile" metaclassReference="_Kcdw0E2OEeaQue6oqchKAA _yVmvEDPVEeqDYpZ_5FQd2A">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QzVMQE2OEeaQue6oqchKAA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-    <contents xmi:type="ecore:EPackage" xmi:id="_VgowAC_REeqNRJUKtSQxPw" name="jpa" nsURI="http://www.samsarasoftware.net/jpa.profile" nsPrefix="jpa">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VgowBi_REeqNRJUKtSQxPw" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgowBy_REeqNRJUKtSQxPw" key="Version" value="0.2.0"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgowCC_REeqNRJUKtSQxPw" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgowCS_REeqNRJUKtSQxPw" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgowCi_REeqNRJUKtSQxPw" key="Date" value="2020-01-05"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgowCy_REeqNRJUKtSQxPw" key="Author" value=""/>
+    <contents xmi:type="ecore:EPackage" xmi:id="_3XTuYDPVEeqDYpZ_5FQd2A" name="jpa" nsURI="http://www.samsarasoftware.net/jpa.profile" nsPrefix="jpa">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3XXYwDPVEeqDYpZ_5FQd2A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYwTPVEeqDYpZ_5FQd2A" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYwjPVEeqDYpZ_5FQd2A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYwzPVEeqDYpZ_5FQd2A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYxDPVEeqDYpZ_5FQd2A" key="Date" value="2020-01-10"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYxTPVEeqDYpZ_5FQd2A" key="Author" value=""/>
       </eAnnotations>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_VgowAS_REeqNRJUKtSQxPw" name="JPA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VgowAi_REeqNRJUKtSQxPw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LB71YE2OEeaQue6oqchKAA"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_VgowAy_REeqNRJUKtSQxPw" name="base_Component" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_3XTuYTPVEeqDYpZ_5FQd2A" name="JPA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3XTuYjPVEeqDYpZ_5FQd2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LB71YE2OEeaQue6oqchKAA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_3XTuYzPVEeqDYpZ_5FQd2A" name="base_Component" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
         </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_3XTuZTPVEeqDYpZ_5FQd2A" name="Version">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3XTuZjPVEeqDYpZ_5FQd2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yyYKoDPVEeqDYpZ_5FQd2A"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
       </eClassifiers>
     </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_mUBjwMiMEee6JIMjhFx77g" name="jpa" nsURI="http://www.samsarasoftware.net/jpa.profile" nsPrefix="jpa">
@@ -50,6 +54,9 @@
   <elementImport xmi:type="uml:ElementImport" xmi:id="_Kcdw0E2OEeaQue6oqchKAA" alias="Component">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
   </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_yVmvEDPVEeqDYpZ_5FQd2A" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_LB71YE2OEeaQue6oqchKAA" name="JPA">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Lypgok2OEeaQue6oqchKAA" name="base_Component" association="_LypgoE2OEeaQue6oqchKAA">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
@@ -57,5 +64,10 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Extension" xmi:id="_LypgoE2OEeaQue6oqchKAA" name="E_JPA_Component1" memberEnd="_LypgoU2OEeaQue6oqchKAA _Lypgok2OEeaQue6oqchKAA">
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LypgoU2OEeaQue6oqchKAA" name="extension_JPA" type="_LB71YE2OEeaQue6oqchKAA" aggregation="composite" association="_LypgoE2OEeaQue6oqchKAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_yyYKoDPVEeqDYpZ_5FQd2A" name="Version">
+    <generalization xmi:type="uml:Generalization" xmi:id="_zz88YDPVEeqDYpZ_5FQd2A">
+      <general xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </generalization>
   </packagedElement>
 </uml:Profile>

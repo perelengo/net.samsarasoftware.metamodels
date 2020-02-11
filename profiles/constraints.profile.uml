@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EEtDED4TEeqDMq_m8Y3ifQ" name="constraints" URI="http://www.samsarasoftware.net/constraints.profile" metaclassReference="_HjVGED4TEeqDMq_m8Y3ifQ">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jy_kUD4UEeqDMq_m8Y3ifQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_TMSJYD4XEeqDMq_m8Y3ifQ" name="constraints" nsURI="http://www.samsarasoftware.net/constraints.profile" nsPrefix="constraints">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TMUloT4XEeqDMq_m8Y3ifQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TMUloj4XEeqDMq_m8Y3ifQ" key="Version" value="0.2.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TMUloz4XEeqDMq_m8Y3ifQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TMUlpD4XEeqDMq_m8Y3ifQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TMUlpT4XEeqDMq_m8Y3ifQ" key="Date" value="2020-01-23"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TMUlpj4XEeqDMq_m8Y3ifQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_TMSJYT4XEeqDMq_m8Y3ifQ" name="DecimalConstraints" eSuperTypes="_TMSJZj4XEeqDMq_m8Y3ifQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TMSJYj4XEeqDMq_m8Y3ifQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IgCl8D4TEeqDMq_m8Y3ifQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_TMSJYz4XEeqDMq_m8Y3ifQ" name="scale" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_TMSJZj4XEeqDMq_m8Y3ifQ" name="LengthConstraints">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TMSJZz4XEeqDMq_m8Y3ifQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ITx2ID4UEeqDMq_m8Y3ifQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_TMSJaD4XEeqDMq_m8Y3ifQ" name="maxLength" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_TMSJaj4XEeqDMq_m8Y3ifQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_jzALYD4UEeqDMq_m8Y3ifQ" name="constraints" nsURI="http://www.samsarasoftware.net/constraints.profile" nsPrefix="constraints">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jzD1wT4UEeqDMq_m8Y3ifQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jzD1wj4UEeqDMq_m8Y3ifQ" key="Version" value="0.2.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jzD1wz4UEeqDMq_m8Y3ifQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jzD1xD4UEeqDMq_m8Y3ifQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jzD1xT4UEeqDMq_m8Y3ifQ" key="Date" value="2020-01-23"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jzD1xj4UEeqDMq_m8Y3ifQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_jzALYT4UEeqDMq_m8Y3ifQ" name="NumericConstraints">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jzALYj4UEeqDMq_m8Y3ifQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IgCl8D4TEeqDMq_m8Y3ifQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_jzALYz4UEeqDMq_m8Y3ifQ" name="precision" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_jzALZT4UEeqDMq_m8Y3ifQ" name="scale" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_jzALZz4UEeqDMq_m8Y3ifQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_jzALaT4UEeqDMq_m8Y3ifQ" name="StringConstraints">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jzALaj4UEeqDMq_m8Y3ifQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ITx2ID4UEeqDMq_m8Y3ifQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_jzALaz4UEeqDMq_m8Y3ifQ" name="maxLength" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_jzALbT4UEeqDMq_m8Y3ifQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_HjVGED4TEeqDMq_m8Y3ifQ" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_EH_AkD4TEeqDMq_m8Y3ifQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_EH_noD4TEeqDMq_m8Y3ifQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_IgCl8D4TEeqDMq_m8Y3ifQ" name="DecimalConstraints">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LtljMD4XEeqDMq_m8Y3ifQ" general="_ITx2ID4UEeqDMq_m8Y3ifQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VJSlcD4TEeqDMq_m8Y3ifQ" name="scale">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ITx2ID4UEeqDMq_m8Y3ifQ" name="LengthConstraints">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_L-miED4UEeqDMq_m8Y3ifQ" name="maxLength">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wc-lcT4UEeqDMq_m8Y3ifQ" name="base_Property" association="_Wc9-YD4UEeqDMq_m8Y3ifQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Wc9-YD4UEeqDMq_m8Y3ifQ" name="E_LengthConstraints_Property1" memberEnd="_Wc-lcD4UEeqDMq_m8Y3ifQ _Wc-lcT4UEeqDMq_m8Y3ifQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Wc-lcD4UEeqDMq_m8Y3ifQ" name="extension_LengthConstraints" type="_ITx2ID4UEeqDMq_m8Y3ifQ" aggregation="composite" association="_Wc9-YD4UEeqDMq_m8Y3ifQ"/>
+  </packagedElement>
+</uml:Profile>

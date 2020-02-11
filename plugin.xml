@@ -64,7 +64,7 @@
 		<profile
 			name="jpa"
 			uri="http://www.samsarasoftware.net/jpa.profile"
-			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jpa.profile.uml#_VgowAC_REeqNRJUKtSQxPw">
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/jpa.profile.uml#_3XTuYDPVEeqDYpZ_5FQd2A">
       </profile>
    </extension>
    <extension point="org.eclipse.emf.ecore.generated_package">
