@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_iorAMEjeEeqc8YEnWHKYTw" name="foundations" metaclassReference="_2lFkIEkGEeqc8YEnWHKYTw _rvGKoEkJEeqc8YEnWHKYTw">
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_iorAMEjeEeqc8YEnWHKYTw" name="foundations" metaclassReference="_2lFkIEkGEeqc8YEnWHKYTw _rvGKoEkJEeqc8YEnWHKYTw _WPC1IEzQEeqvxMIC56Ah_g _nhnTsEzREeqvxMIC56Ah_g">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV90UvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
     <contents xmi:type="ecore:EPackage" xmi:id="_jNV90kvvEeqc8YEnWHKYTw" name="foundations" nsURI="http:///schemas/foundations/_jNV90EvvEeqc8YEnWHKYTw/0" nsPrefix="foundations">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-3UvvEeqc8YEnWHKYTw" source="PapyrusVersion">
@@ -48,7 +48,7 @@
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV98EvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_neXdoEj7Eeqc8YEnWHKYTw"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV98kvvEeqc8YEnWHKYTw" name="Persistent" abstract="true" eSuperTypes="_jNV91UvvEeqc8YEnWHKYTw">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV980vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_obkswEj7Eeqc8YEnWHKYTw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV980vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV99UvvEeqc8YEnWHKYTw" name="Structured" abstract="true" eSuperTypes="_jNV91UvvEeqc8YEnWHKYTw">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV99kvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_q9Y-sEj6Eeqc8YEnWHKYTw"/>
@@ -197,18 +197,18 @@
             </eClassifiers>
           </eSubpackages>
           <eSubpackages xmi:type="ecore:EPackage" xmi:id="_jNV-ekvvEeqc8YEnWHKYTw" name="formats" nsURI="http:///foundations/utilities/information/formats.ecore" nsPrefix="foundations.utilities.information.formats">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-e0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_d2_hcEkAEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-e0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/4.0.0/UML"/>
             <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-fEvvEeqc8YEnWHKYTw" name="XML">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-fUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tQhXkkj9Eeqc8YEnWHKYTw"/>
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-fUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
             </eClassifiers>
             <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-fkvvEeqc8YEnWHKYTw" name="CSV">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-f0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tQhXk0j9Eeqc8YEnWHKYTw"/>
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-f0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
             </eClassifiers>
           </eSubpackages>
           <eSubpackages xmi:type="ecore:EPackage" xmi:id="_jNV-gEvvEeqc8YEnWHKYTw" name="metaformats" nsURI="http:///foundations/utilities/information/metaformats.ecore" nsPrefix="foundations.utilities.information.metaformats">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-gUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_i7iN0EkKEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-gUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/4.0.0/UML"/>
             <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-gkvvEeqc8YEnWHKYTw" name="XSD">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-g0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_liQ_gEkKEeqc8YEnWHKYTw"/>
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-g0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
             </eClassifiers>
           </eSubpackages>
           <eSubpackages xmi:type="ecore:EPackage" xmi:id="_jNV-hEvvEeqc8YEnWHKYTw" name="storagesystems" nsURI="http:///foundations/utilities/information/storagesystems.ecore" nsPrefix="foundations.utilities.information.storagesystems">
@@ -236,7 +236,7 @@
         <eSubpackages xmi:type="ecore:EPackage" xmi:id="_jNV-lUvvEeqc8YEnWHKYTw" name="operativesystems" nsURI="http:///foundations/utilities/operativesystems.ecore" nsPrefix="foundations.utilities.operativesystems">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-lkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DmIx4EkCEeqc8YEnWHKYTw"/>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-l0vvEeqc8YEnWHKYTw" name="Windows" eSuperTypes="_jNV-mkvvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-mEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IgfzEEkCEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-mEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-mkvvEeqc8YEnWHKYTw" name="OperativeSystem" abstract="true">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-m0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Nt72YEkEEeqc8YEnWHKYTw"/>
@@ -248,43 +248,43 @@
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-oEvvEeqc8YEnWHKYTw" name="RedHat" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-oUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_t2RWsEkCEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-oUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-o0vvEeqc8YEnWHKYTw" name="Linux" eSuperTypes="_jNV-mkvvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-pEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3LBDEEkDEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-pEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-pkvvEeqc8YEnWHKYTw" name="Debian" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-p0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wrJSEEkCEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-p0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-qUvvEeqc8YEnWHKYTw" name="Fedora" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-qkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LbcEwEkDEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-qkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-rEvvEeqc8YEnWHKYTw" name="Alpine" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-rUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MtkbAEkDEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-rUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-r0vvEeqc8YEnWHKYTw" name="Ubuntu" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-sEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0cr0kEkDEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-sEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-skvvEeqc8YEnWHKYTw" name="WindowsPro" eSuperTypes="_jNV-l0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-s0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CIW6YEkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-s0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-tUvvEeqc8YEnWHKYTw" name="WindowsHome" eSuperTypes="_jNV-l0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-tkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ESxjgEkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-tkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-uEvvEeqc8YEnWHKYTw" name="WindowsServer" eSuperTypes="_jNV-l0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-uUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FllPMEkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-uUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-u0vvEeqc8YEnWHKYTw" name="Android" eSuperTypes="_jNV-mkvvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-vEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_UeSv4EkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-vEvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-vkvvEeqc8YEnWHKYTw" name="Ios" eSuperTypes="_jNV-mkvvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-v0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_WL46IEkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-v0vvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-wUvvEeqc8YEnWHKYTw" name="Osx" eSuperTypes="_jNV-mkvvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-wkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Xl_goEkEEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-wkvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_jNV-xEvvEeqc8YEnWHKYTw" name="CentOs" eSuperTypes="_jNV-o0vvEeqc8YEnWHKYTw">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-xUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MR5gwEkFEeqc8YEnWHKYTw"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jNV-xUvvEeqc8YEnWHKYTw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           </eClassifiers>
         </eSubpackages>
         <eSubpackages xmi:type="ecore:EPackage" xmi:id="_jNV-x0vvEeqc8YEnWHKYTw" name="runtimes" nsURI="http:///foundations/utilities/runtimes.ecore" nsPrefix="foundations.utilities.runtimes">
@@ -326,6 +326,12 @@
   </elementImport>
   <elementImport xmi:type="uml:ElementImport" xmi:id="_rvGKoEkJEeqc8YEnWHKYTw" alias="ExecutionEnvironment">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ExecutionEnvironment"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_WPC1IEzQEeqvxMIC56Ah_g" alias="Component">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_nhnTsEzREeqvxMIC56Ah_g" alias="Port">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
   </elementImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_jENUkEj9Eeqc8YEnWHKYTw" name="core">
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_6HTlIEjvEeqc8YEnWHKYTw" name="Feature" isAbstract="true"/>
@@ -412,9 +418,6 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_neXdoEj7Eeqc8YEnWHKYTw" name="Transient" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_pU9y4Ej7Eeqc8YEnWHKYTw" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_obkswEj7Eeqc8YEnWHKYTw" name="Persistent" isAbstract="true">
-      <generalization xmi:type="uml:Generalization" xmi:id="_pySBAEj7Eeqc8YEnWHKYTw" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_q9Y-sEj6Eeqc8YEnWHKYTw" name="Structured" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_tBlEAEj6Eeqc8YEnWHKYTw" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
     </packagedElement>
@@ -422,7 +425,9 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_tZo-sEj6Eeqc8YEnWHKYTw" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_W_90sEj_Eeqc8YEnWHKYTw" name="osi">
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_qKomsEjnEeqc8YEnWHKYTw" name="OsiLayers" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_qKomsEjnEeqc8YEnWHKYTw" name="OsiLayers" isAbstract="true">
+        <generalization xmi:type="uml:Generalization" xmi:id="_tUsM8EzOEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_tbukAEjnEeqc8YEnWHKYTw" name="OsiPhysicalLayer" isAbstract="true">
         <generalization xmi:type="uml:Generalization" xmi:id="_32kyQEjnEeqc8YEnWHKYTw" general="_qKomsEjnEeqc8YEnWHKYTw"/>
       </packagedElement>
@@ -445,10 +450,21 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_6NFWoEjnEeqc8YEnWHKYTw" general="_qKomsEjnEeqc8YEnWHKYTw"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_CYNTQEkPEeqc8YEnWHKYTw" name="Atomic"/>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_EdwDcEkPEeqc8YEnWHKYTw" name="Consistent"/>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_J2BIoEkPEeqc8YEnWHKYTw" name="Isolated"/>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Lucp4EkPEeqc8YEnWHKYTw" name="Durable"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_CYNTQEkPEeqc8YEnWHKYTw" name="Atomic" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_DGN1AEzOEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_EdwDcEkPEeqc8YEnWHKYTw" name="Consistent" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Dhn-oEzOEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_J2BIoEkPEeqc8YEnWHKYTw" name="Isolated" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_D-9a4EzOEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Lucp4EkPEeqc8YEnWHKYTw" name="Durable" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Eg3OEEzOEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_HqltMEzQEeqvxMIC56Ah_g" name="Pattern" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_K-z3AEzQEeqvxMIC56Ah_g" general="_6HTlIEjvEeqc8YEnWHKYTw"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_j1mVQEj9Eeqc8YEnWHKYTw" name="capabilities">
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_-Fc_QEj7Eeqc8YEnWHKYTw" name="Compute" isAbstract="true">
@@ -488,6 +504,12 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_58BmkEkNEeqc8YEnWHKYTw" name="Assembly" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_836v8EkNEeqc8YEnWHKYTw" general="__Dvp8EjvEeqc8YEnWHKYTw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_KuexcEzPEeqvxMIC56Ah_g" name="AcidTransactions" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_TwBDYEzPEeqvxMIC56Ah_g" general="_PKm2QEjkEeqc8YEnWHKYTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_NL-HkEzPEeqvxMIC56Ah_g" name="BusinessTransactions" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UJhIgEzPEeqvxMIC56Ah_g" general="_PKm2QEjkEeqc8YEnWHKYTw"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_j3FjAEj9Eeqc8YEnWHKYTw" name="utilities">
     <packagedElement xmi:type="uml:Package" xmi:id="_9s-4EEj_Eeqc8YEnWHKYTw" name="programming">
@@ -522,7 +544,12 @@
           <packagedElement xmi:type="uml:Extension" xmi:id="_sj0MIEkJEeqc8YEnWHKYTw" name="E_LanguajeInterpreter_ExecutionEnvironment1" memberEnd="_sj0MIUkJEeqc8YEnWHKYTw _sj0MIkkJEeqc8YEnWHKYTw">
             <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_sj0MIUkJEeqc8YEnWHKYTw" name="extension_LanguajeInterpreter" type="_WHvIAEkGEeqc8YEnWHKYTw" aggregation="composite" association="_sj0MIEkJEeqc8YEnWHKYTw"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_jiBJkEkLEeqc8YEnWHKYTw" name="ProgrammingLanguage" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_jiBJkEkLEeqc8YEnWHKYTw" name="ProgrammingLanguage" isAbstract="true">
+            <generalization xmi:type="uml:Generalization" xmi:id="_NthK4EzOEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Xd-tcEzQEeqvxMIC56Ah_g" name="base_Component" association="_XdeXIEzQEeqvxMIC56Ah_g">
+              <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+            </ownedAttribute>
+          </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_YjjqMEkGEeqc8YEnWHKYTw" memberEnd="_YjkRQkkGEeqc8YEnWHKYTw _YjkRQ0kGEeqc8YEnWHKYTw">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YjkRQEkGEeqc8YEnWHKYTw" source="org.eclipse.papyrus">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YjkRQUkGEeqc8YEnWHKYTw" key="nature" value="UML_Nature"/>
@@ -553,6 +580,9 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uduCIEkLEeqc8YEnWHKYTw" value="*"/>
             </ownedEnd>
           </packagedElement>
+          <packagedElement xmi:type="uml:Extension" xmi:id="_XdeXIEzQEeqvxMIC56Ah_g" name="E_ProgrammingLanguage_Component1" memberEnd="_Xd9fUEzQEeqvxMIC56Ah_g _Xd-tcEzQEeqvxMIC56Ah_g">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Xd9fUEzQEeqvxMIC56Ah_g" name="extension_ProgrammingLanguage" type="_jiBJkEkLEeqc8YEnWHKYTw" aggregation="composite" association="_XdeXIEzQEeqvxMIC56Ah_g"/>
+          </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -560,6 +590,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_bfznoEkAEeqc8YEnWHKYTw" name="specifications">
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_l3SRQEjeEeqc8YEnWHKYTw" name="Data" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_Z9AcUEj5Eeqc8YEnWHKYTw" general="_tVtoUEj3Eeqc8YEnWHKYTw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_6l9EIEzNEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_uQILgEjeEeqc8YEnWHKYTw" name="UnstructuredData" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_zvf-QEjeEeqc8YEnWHKYTw" general="_l3SRQEjeEeqc8YEnWHKYTw"/>
@@ -572,22 +603,16 @@
           <generalization xmi:type="uml:Generalization" xmi:id="_ymRboEj6Eeqc8YEnWHKYTw" general="_QYZSgEj5Eeqc8YEnWHKYTw"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_d2_hcEkAEeqc8YEnWHKYTw" name="formats">
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_tQhXkkj9Eeqc8YEnWHKYTw" name="XML"/>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_tQhXk0j9Eeqc8YEnWHKYTw" name="CSV"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_i7iN0EkKEeqc8YEnWHKYTw" name="metaformats">
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_liQ_gEkKEeqc8YEnWHKYTw" name="XSD"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_njFXwEm6Eeqc8YEnWHKYTw" name="storagesystems">
         <packagedElement xmi:type="uml:Package" xmi:id="_Yj2_YEm6Eeqc8YEnWHKYTw" name="databases">
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_3AaBYEm6Eeqc8YEnWHKYTw" name="Database">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_3AaBYEm6Eeqc8YEnWHKYTw" name="Database" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_H5Z-0Em7Eeqc8YEnWHKYTw" general="_GNkvIEm7Eeqc8YEnWHKYTw"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_-lnfQEm6Eeqc8YEnWHKYTw" name="version"/>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_GNkvIEm7Eeqc8YEnWHKYTw" name="StorageSystem" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_wR9sEEm9Eeqc8YEnWHKYTw" general="_0UndgEjeEeqc8YEnWHKYTw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_8PQkQEzNEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_Pj1T4Em7Eeqc8YEnWHKYTw" name="filesystem">
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_WnRhcEm7Eeqc8YEnWHKYTw" name="FileSystem">
@@ -597,53 +622,13 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DmIx4EkCEeqc8YEnWHKYTw" name="operativesystems">
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_IgfzEEkCEeqc8YEnWHKYTw" name="Windows">
-        <generalization xmi:type="uml:Generalization" xmi:id="_PM5uwEkEEeqc8YEnWHKYTw" general="_Nt72YEkEEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_t2RWsEkCEeqc8YEnWHKYTw" name="RedHat">
-        <generalization xmi:type="uml:Generalization" xmi:id="_40Q40EkDEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_wrJSEEkCEeqc8YEnWHKYTw" name="Debian">
-        <generalization xmi:type="uml:Generalization" xmi:id="_66MqkEkDEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_LbcEwEkDEeqc8YEnWHKYTw" name="Fedora">
-        <generalization xmi:type="uml:Generalization" xmi:id="_5SSRkEkDEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_MtkbAEkDEeqc8YEnWHKYTw" name="Alpine">
-        <generalization xmi:type="uml:Generalization" xmi:id="_7xQOYEkDEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_0cr0kEkDEeqc8YEnWHKYTw" name="Ubuntu">
-        <generalization xmi:type="uml:Generalization" xmi:id="_pcbWsEkEEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_3LBDEEkDEeqc8YEnWHKYTw" name="Linux">
-        <generalization xmi:type="uml:Generalization" xmi:id="_Po-mwEkEEeqc8YEnWHKYTw" general="_Nt72YEkEEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_CIW6YEkEEeqc8YEnWHKYTw" name="WindowsPro">
-        <generalization xmi:type="uml:Generalization" xmi:id="_H5-TsEkEEeqc8YEnWHKYTw" general="_IgfzEEkCEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_ESxjgEkEEeqc8YEnWHKYTw" name="WindowsHome">
-        <generalization xmi:type="uml:Generalization" xmi:id="_IXXaUEkEEeqc8YEnWHKYTw" general="_IgfzEEkCEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_FllPMEkEEeqc8YEnWHKYTw" name="WindowsServer">
-        <generalization xmi:type="uml:Generalization" xmi:id="_I_FhoEkEEeqc8YEnWHKYTw" general="_IgfzEEkCEeqc8YEnWHKYTw"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_Nt72YEkEEeqc8YEnWHKYTw" name="OperativeSystem" isAbstract="true">
+        <generalization xmi:type="uml:Generalization" xmi:id="_-0rHUEzNEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_C7v08EzPEeqvxMIC56Ah_g" general="_ugGzUEkBEeqc8YEnWHKYTw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eGy7MEkEEeqc8YEnWHKYTw" name="version"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3WM4AEkGEeqc8YEnWHKYTw" name="base_Node" association="_3WADsEkGEeqc8YEnWHKYTw">
           <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_UeSv4EkEEeqc8YEnWHKYTw" name="Android">
-        <generalization xmi:type="uml:Generalization" xmi:id="_aB_B8EkEEeqc8YEnWHKYTw" general="_Nt72YEkEEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_WL46IEkEEeqc8YEnWHKYTw" name="Ios">
-        <generalization xmi:type="uml:Generalization" xmi:id="_afLUQEkEEeqc8YEnWHKYTw" general="_Nt72YEkEEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_Xl_goEkEEeqc8YEnWHKYTw" name="Osx">
-        <generalization xmi:type="uml:Generalization" xmi:id="_bM1rgEkEEeqc8YEnWHKYTw" general="_Nt72YEkEEeqc8YEnWHKYTw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="_MR5gwEkFEeqc8YEnWHKYTw" name="CentOs">
-        <generalization xmi:type="uml:Generalization" xmi:id="_NowmAEkFEeqc8YEnWHKYTw" general="_3LBDEEkDEeqc8YEnWHKYTw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Extension" xmi:id="_3WADsEkGEeqc8YEnWHKYTw" name="E_OperativeSystem_Node1" memberEnd="_3WMQ8EkGEeqc8YEnWHKYTw _3WM4AEkGEeqc8YEnWHKYTw">
         <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_3WMQ8EkGEeqc8YEnWHKYTw" name="extension_OperativeSystem" type="_Nt72YEkEEeqc8YEnWHKYTw" aggregation="composite" association="_3WADsEkGEeqc8YEnWHKYTw"/>
@@ -657,6 +642,8 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_iakEMEkJEeqc8YEnWHKYTw" general="_WHvIAEkGEeqc8YEnWHKYTw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_WHvIAEkGEeqc8YEnWHKYTw" name="LanguajeInterpreter" isAbstract="true">
+        <generalization xmi:type="uml:Generalization" xmi:id="_SxHAkEzOEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_GWdBQEzPEeqvxMIC56Ah_g" general="_ugGzUEkBEeqc8YEnWHKYTw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sj0MIkkJEeqc8YEnWHKYTw" name="base_ExecutionEnvironment" association="_sj0MIEkJEeqc8YEnWHKYTw">
           <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ExecutionEnvironment"/>
         </ownedAttribute>
@@ -669,6 +656,22 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_h0SsIEm-Eeqc8YEnWHKYTw" name="protocols">
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_mUKwwEm-Eeqc8YEnWHKYTw" name="ComunicationProtocol">
           <generalization xmi:type="uml:Generalization" xmi:id="_pdjjkEm-Eeqc8YEnWHKYTw" general="_uVT_8Ej-Eeqc8YEnWHKYTw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_WB4NwEzOEeqvxMIC56Ah_g" general="_7VoukEjxEeqc8YEnWHKYTw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pvhVsEzREeqvxMIC56Ah_g" name="base_Port" association="_pvguoEzREeqvxMIC56Ah_g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_pvguoEzREeqvxMIC56Ah_g" name="E_ComunicationProtocol_Port1" memberEnd="_pvguoUzREeqvxMIC56Ah_g _pvhVsEzREeqvxMIC56Ah_g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pvguoUzREeqvxMIC56Ah_g" name="extension_ComunicationProtocol" type="_mUKwwEm-Eeqc8YEnWHKYTw" aggregation="composite" association="_pvguoEzREeqvxMIC56Ah_g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_zPUbgEzSEeqvxMIC56Ah_g" name="ServicesDescriptionLanguaje" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_sKDzkEzTEeqvxMIC56Ah_g" general="_3XltAEjjEeqc8YEnWHKYTw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JpwLwUzUEeqvxMIC56Ah_g" name="base_Port" association="_JpvksEzUEeqvxMIC56Ah_g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_JpvksEzUEeqvxMIC56Ah_g" name="E_ServicesDescriptionLanguaje_Port1" memberEnd="_JpwLwEzUEeqvxMIC56Ah_g _JpwLwUzUEeqvxMIC56Ah_g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_JpwLwEzUEeqvxMIC56Ah_g" name="extension_ServicesDescriptionLanguaje" type="_zPUbgEzSEeqvxMIC56Ah_g" aggregation="composite" association="_JpvksEzUEeqvxMIC56Ah_g"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -681,6 +684,19 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_GhwC4kkMEeqc8YEnWHKYTw" name="metadata" type="_3XltAEjjEeqc8YEnWHKYTw" association="_Ghvb0EkMEeqc8YEnWHKYTw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JOhyMEkMEeqc8YEnWHKYTw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JOkOcEkMEeqc8YEnWHKYTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yZCeUEzTEeqvxMIC56Ah_g" memberEnd="_yZcuAEzTEeqvxMIC56Ah_g _yZdVEEzTEeqvxMIC56Ah_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yZZqsEzTEeqvxMIC56Ah_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yZZqsUzTEeqvxMIC56Ah_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yZdVEEzTEeqvxMIC56Ah_g" name="comunicationprotocol" type="_mUKwwEm-Eeqc8YEnWHKYTw" association="_yZCeUEzTEeqvxMIC56Ah_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0s8aoEzTEeqvxMIC56Ah_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0s_d8EzTEeqvxMIC56Ah_g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yZcuAEzTEeqvxMIC56Ah_g" name="servicedescriptionlanguaje" type="_zPUbgEzSEeqvxMIC56Ah_g" association="_yZCeUEzTEeqvxMIC56Ah_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gy1AEzTEeqvxMIC56Ah_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0g14UEzTEeqvxMIC56Ah_g" value="*"/>
     </ownedEnd>
   </packagedElement>
 </uml:Profile>
