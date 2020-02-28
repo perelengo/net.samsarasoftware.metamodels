@@ -9,15 +9,17 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYxDPVEeqDYpZ_5FQd2A" key="Date" value="2020-01-10"/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3XXYxTPVEeqDYpZ_5FQd2A" key="Author" value=""/>
       </eAnnotations>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_3XTuYTPVEeqDYpZ_5FQd2A" name="JPA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3XTuYjPVEeqDYpZ_5FQd2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LB71YE2OEeaQue6oqchKAA"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_3XTuYzPVEeqDYpZ_5FQd2A" name="base_Component" ordered="false" lowerBound="1">
+     <eClassifiers xmi:type="ecore:EClass" xmi:id="_7QU_AVjPEeqxA-0LobWz4A" name="JPA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7QU_AljPEeqxA-0LobWz4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LB71YE2OEeaQue6oqchKAA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7QU_A1jPEeqxA-0LobWz4A" name="base_Component" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_3XTuZTPVEeqDYpZ_5FQd2A" name="Version">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3XTuZjPVEeqDYpZ_5FQd2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yyYKoDPVEeqDYpZ_5FQd2A"/>
-        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7QU_BVjPEeqxA-0LobWz4A" name="Version">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7QU_BljPEeqxA-0LobWz4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yyYKoDPVEeqDYpZ_5FQd2A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7QU_B1jPEeqxA-0LobWz4A" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
       </eClassifiers>
     </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_mUBjwMiMEee6JIMjhFx77g" name="jpa" nsURI="http://www.samsarasoftware.net/jpa.profile" nsPrefix="jpa">
@@ -66,8 +68,11 @@
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LypgoU2OEeaQue6oqchKAA" name="extension_JPA" type="_LB71YE2OEeaQue6oqchKAA" aggregation="composite" association="_LypgoE2OEeaQue6oqchKAA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_yyYKoDPVEeqDYpZ_5FQd2A" name="Version">
-    <generalization xmi:type="uml:Generalization" xmi:id="_zz88YDPVEeqDYpZ_5FQd2A">
-      <general xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
-    </generalization>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_54JrIFjPEeqxA-0LobWz4A" name="base_Property" association="_54C9cFjPEeqxA-0LobWz4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_54C9cFjPEeqxA-0LobWz4A" name="E_Version_Property1" memberEnd="_54IdAFjPEeqxA-0LobWz4A _54JrIFjPEeqxA-0LobWz4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_54IdAFjPEeqxA-0LobWz4A" name="extension_Version" type="_yyYKoDPVEeqDYpZ_5FQd2A" aggregation="composite" association="_54C9cFjPEeqxA-0LobWz4A"/>
   </packagedElement>
 </uml:Profile>

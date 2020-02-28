@@ -113,14 +113,11 @@ limitations under the License.
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yWGeWjPVEeqDYpZ_5FQd2A"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yWGeWzPVEeqDYpZ_5FQd2A"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_z0DqEDPVEeqDYpZ_5FQd2A" type="4002" source="_yyYxsDPVEeqDYpZ_5FQd2A" target="_yVokQDPVEeqDYpZ_5FQd2A">
-    <children xmi:type="notation:DecorationNode" xmi:id="_z0DqEzPVEeqDYpZ_5FQd2A" type="6007">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_z0DqFDPVEeqDYpZ_5FQd2A" y="60"/>
-    </children>
-    <styles xmi:type="notation:FontStyle" xmi:id="_z0DqETPVEeqDYpZ_5FQd2A"/>
-    <element xmi:type="uml:Generalization" href="jpa.profile.uml#_zz88YDPVEeqDYpZ_5FQd2A"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z0DqEjPVEeqDYpZ_5FQd2A" points="[-4, -17, 20, 141]$[26, -155, 50, 3]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z0S6oDPVEeqDYpZ_5FQd2A" id="(0.56,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z0S6oTPVEeqDYpZ_5FQd2A" id="(0.7,1.0)"/>
+  <edges xmi:type="notation:Connector" xmi:id="_54oMQFjPEeqxA-0LobWz4A" type="1013" source="_yyYxsDPVEeqDYpZ_5FQd2A" target="_yVokQDPVEeqDYpZ_5FQd2A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_54oMQVjPEeqxA-0LobWz4A"/>
+    <element xmi:type="uml:Extension" href="jpa.profile.uml#_54C9cFjPEeqxA-0LobWz4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_54oMQljPEeqxA-0LobWz4A" points="[-7, -15, 17, 141]$[11, -131, 35, 25]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_55B04FjPEeqxA-0LobWz4A" id="(0.56,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_55B04VjPEeqxA-0LobWz4A" id="(0.67,1.0)"/>
   </edges>
 </notation:Diagram>

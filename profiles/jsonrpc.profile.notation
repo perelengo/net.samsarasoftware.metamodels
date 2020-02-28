@@ -178,23 +178,6 @@ limitations under the License.
     <element xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_8BlakFWvEea7DKdewb94SQ"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lvIiQXCNEee4tJqfwRNaaQ" x="427" y="174"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_m3htsHCNEee4tJqfwRNaaQ" type="1026">
-    <children xmi:type="notation:DecorationNode" xmi:id="_m3htsnCNEee4tJqfwRNaaQ" type="1034"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_m3hts3CNEee4tJqfwRNaaQ" type="1071">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_m3httHCNEee4tJqfwRNaaQ"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_m3httXCNEee4tJqfwRNaaQ"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_m3httnCNEee4tJqfwRNaaQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3htt3CNEee4tJqfwRNaaQ"/>
-    </children>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_m3htuHCNEee4tJqfwRNaaQ" type="1019">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_m3htuXCNEee4tJqfwRNaaQ"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_m3htunCNEee4tJqfwRNaaQ"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_m3htu3CNEee4tJqfwRNaaQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3htvHCNEee4tJqfwRNaaQ"/>
-    </children>
-    <element xmi:type="uml:Stereotype" href="platform:/plugin/net.samsarasoftware.metamodels/profiles/webservice.profile.uml#_0zmswFW2Eea7DKdewb94SQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3htsXCNEee4tJqfwRNaaQ" x="187" y="182"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_u5t7IHCQEee2gqQ6lpcoZQ" type="1026">
     <children xmi:type="notation:DecorationNode" xmi:id="_u5vJQHCQEee2gqQ6lpcoZQ" type="1034"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_u5vJQXCQEee2gqQ6lpcoZQ" type="1071">
@@ -235,7 +218,7 @@ limitations under the License.
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UfQ2UnEkEeeWMbBlK_TBBg"/>
     </children>
     <element xmi:type="uml:Stereotype" href="jsonrpc.profile.uml#_v1Y5MHCQEee2gqQ6lpcoZQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v1auYXCQEee2gqQ6lpcoZQ" x="-140" y="596"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v1auYXCQEee2gqQ6lpcoZQ" x="-126" y="596"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_7oNLQHElEeeWMbBlK_TBBg" type="1026">
     <children xmi:type="notation:DecorationNode" xmi:id="_7oNLQnElEeeWMbBlK_TBBg" type="1034"/>
@@ -431,7 +414,7 @@ limitations under the License.
     <styles xmi:type="notation:FontStyle" xmi:id="_xohDsXCQEee2gqQ6lpcoZQ"/>
     <element xmi:type="uml:Generalization" href="jsonrpc.profile.uml#_xoE-0HCQEee2gqQ6lpcoZQ"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xohDsnCQEee2gqQ6lpcoZQ" points="[5, -13, 0, 76]$[6, -78, 1, 11]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xozXkHCQEee2gqQ6lpcoZQ" id="(0.5029940119760479,0.0)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xozXkHCQEee2gqQ6lpcoZQ" id="(0.499001996007984,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xozXkXCQEee2gqQ6lpcoZQ" id="(0.4691358024691358,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_7pC4wHElEeeWMbBlK_TBBg" type="StereotypeCommentLink" source="_7ovWwHElEeeWMbBlK_TBBg" target="_7pCRsHElEeeWMbBlK_TBBg">
@@ -559,7 +542,7 @@ limitations under the License.
     <styles xmi:type="notation:FontStyle" xmi:id="_nEDTcR9qEeqPY7GM6Sjy4A"/>
     <element xmi:type="uml:Generalization" href="jsonrpc.profile.uml#_nD2fIB9qEeqPY7GM6Sjy4A"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nEDTch9qEeqPY7GM6Sjy4A" points="[-18, -11, 72, 44]$[-83, -42, 7, 13]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nEq-gB9qEeqPY7GM6Sjy4A" id="(0.31137724550898205,0.0)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nEq-gB9qEeqPY7GM6Sjy4A" id="(0.3073852295409182,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nEq-gR9qEeqPY7GM6Sjy4A" id="(0.94,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_oB4NoB9qEeqPY7GM6Sjy4A" type="4002" source="_u5t7IHCQEee2gqQ6lpcoZQ" target="_kEoIQHCNEee4tJqfwRNaaQ">
