@@ -99,23 +99,6 @@
 				<version>3.0.2</version>
 				<executions>
 					<execution>
-						<id>copy licenses</id>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<phase>generate-resources</phase>
-						<configuration>
-							<resources>
-								<resource>
-									<directory>${basedir}/../net.samsarasoftware/src/license/</directory>
-									<include>THIRD-PARTY.properties</include>
-									<filtering>true</filtering>
-								</resource>
-							</resources>
-							<outputDirectory>src/license</outputDirectory>
-						</configuration>
-					</execution>
-					<execution>
 						<id>copy profiles</id>
 						<goals>
 							<goal>copy-resources</goal>
@@ -134,37 +117,9 @@
 			</plugin>
 
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>1.12</version>
-				<executions>
-					<execution>
-						<id>first</id>
-						<goals>
-							<goal>update-file-header</goal>
-						</goals>
-						<phase>process-sources</phase>
-						<configuration>
-							<extraExtensions>
-								<ocl>java</ocl>
-								<uml>xml</uml>
-								<di>xml</di>
-								<notation>xml</notation>
-							</extraExtensions>
-							<licenseName>apache_v2</licenseName>
-							<roots>
-								<root>src</root>
-								<root>profiles</root>
-								<root>constraints</root>
-							</roots>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin> 
 		</plugins>
 	</build>
-	
+
 	<scm>
 		<developerConnection>scm:git:git://github.com/perelengo/net.samsarasoftware.metamodels.git</developerConnection>
 	</scm>
@@ -174,8 +129,8 @@
 			<url>scpexe://maven3.samsara-software.es:22/home/samsara-software/domains/maven3.samsara-software.es/repository</url>
 		</repository>
 	</distributionManagement>
-	
-		
+
+
 	<profiles>
 		<profile>
 			<id>generateGenModel</id>
@@ -284,6 +239,68 @@
 					</plugin>
 				</plugins>
 
+			</build>
+		</profile>
+		<profile>
+			<id>refresh-licenses</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-resources-plugin</artifactId>
+						<version>3.0.2</version>
+						<executions>
+							<execution>
+								<id>copy licenses</id>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+								<phase>generate-resources</phase>
+								<configuration>
+									<resources>
+										<resource>
+											<directory>${basedir}/../net.samsarasoftware/src/license/</directory>
+											<include>THIRD-PARTY.properties</include>
+											<filtering>true</filtering>
+										</resource>
+									</resources>
+									<outputDirectory>src/license</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>license-maven-plugin</artifactId>
+						<version>1.12</version>
+						<executions>
+							<execution>
+								<id>first</id>
+								<goals>
+									<goal>update-file-header</goal>
+								</goals>
+								<phase>process-sources</phase>
+								<configuration>
+									<extraExtensions>
+										<ocl>java</ocl>
+										<uml>xml</uml>
+										<di>xml</di>
+										<notation>xml</notation>
+									</extraExtensions>
+									<licenseName>apache_v2</licenseName>
+									<roots>
+										<root>src</root>
+										<root>profiles</root>
+										<root>constraints</root>
+									</roots>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
 			</build>
 		</profile>
 	</profiles>
