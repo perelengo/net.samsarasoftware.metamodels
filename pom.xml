@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.samsarasoftware</groupId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>0.2.0</version>
 		<artifactId>net.samsarasoftware</artifactId>
 		<relativePath>../net.samsarasoftware/</relativePath>
 	</parent>
@@ -17,7 +16,7 @@
 	</licenses>
 	<groupId>net.samsarasoftware</groupId>
 	<artifactId>net.samsarasoftware.metamodels</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.2.0</version>
 	<packaging>eclipse-plugin</packaging>
 	<repositories>
 		<repository>
@@ -152,8 +151,7 @@
 										<echo message="runtime classpath: ${runtime_classpath}" />
 										<echo message="test classpath: ${test_classpath}" />
 										<echo message="plugin classpath: ${plugin_classpath}" />
-										<java fork="false" failonerror="yes"
-											classname="net.samsarasoftware.metamodels.GenModelGenerator">
+										<java fork="false" failonerror="yes" classname="net.samsarasoftware.metamodels.GenModelGenerator">
 											<classpath refid="maven.runtime.classpath" />
 											<classpath refid="maven.compile.classpath" />
 											<arg line="-profilesDir ${basedir}/profiles" />
@@ -214,12 +212,10 @@
 										<echo message="runtime classpath: ${runtime_classpath}" />
 										<echo message="test classpath: ${test_classpath}" />
 										<echo message="plugin classpath: ${plugin_classpath}" />
-										<java fork="false" failonerror="yes"
-											classname="net.samsarasoftware.metamodels.PluginDescriptorGenerator">
+										<java fork="false" failonerror="yes" classname="net.samsarasoftware.metamodels.PluginDescriptorGenerator">
 											<classpath refid="maven.runtime.classpath" />
 											<classpath refid="maven.compile.classpath" />
-											<arg
-												line="-profilesDir ${basedir}/profiles -targetDir ${basedir}/" />
+											<arg line="-profilesDir ${basedir}/profiles -targetDir ${basedir}/" />
 										</java>
 									</target>
 								</configuration>
@@ -295,7 +291,7 @@
 	</profiles>
 	<scm>
 		<developerConnection>scm:git:https://github.com/perelengo/net.samsarasoftware.metamodels.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>net.samsarasoftware.metamodels-0.2.0</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
