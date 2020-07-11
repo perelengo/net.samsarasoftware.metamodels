@@ -225,4 +225,17 @@
 			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/wsdl2.profile.uml#_4gng8C_REeqNRJUKtSQxPw">
       </profile>
    </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+   	<package 
+   		uri = "http://www.samsarasoftware.net/uml2qvto.ecore"
+   		class = "uml2qvto.uml2qvtoPackage"
+   		genModel="profiles/uml2qvto.genmodel"   	/>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			name="uml2qvto"
+			uri="http://www.samsarasoftware.net/uml2qvto.profile"
+			path="platform:/plugin/net.samsarasoftware.metamodels/profiles/uml2qvto.profile.uml#_fl4lAERGEeqJ4ehp_CdGCQ">
+      </profile>
+   </extension>
 </plugin>
