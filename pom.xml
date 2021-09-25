@@ -16,7 +16,7 @@
 	</licenses>
 	<groupId>net.samsarasoftware</groupId>
 	<artifactId>net.samsarasoftware.metamodels</artifactId>
-	<version>0.2.1</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 	<repositories>
 		<repository>
@@ -291,7 +291,7 @@
 	</profiles>
 	<scm>
 		<developerConnection>scm:git:git@github.com:perelengo/net.samsarasoftware.metamodels.git</developerConnection>
-		<tag>net.samsarasoftware.metamodels-0.2.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
