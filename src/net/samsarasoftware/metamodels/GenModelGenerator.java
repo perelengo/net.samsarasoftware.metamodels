@@ -293,7 +293,8 @@ public class GenModelGenerator {
         					cpFiles[i]=ucp[i].toString();
         				}
             	}else if(classLoader.getClass().getName().contains("AntClassLoader")){
-            		ucp=((String)classLoader.getClass().getMethod("getClasspath").invoke(classLoader)).split(";");
+            		String ucpString = ((String)classLoader.getClass().getMethod("getClasspath").invoke(classLoader));
+            		ucp = (ucpString.indexOf(";")!=-1)?ucpString.split(";"):ucpString.split(":"); //; for windows : for linux
             		
         			cpFiles=new String[ucp.length];
 
@@ -309,7 +310,7 @@ public class GenModelGenerator {
               // Failing thet, get it from the system properties.
               throwable.printStackTrace();
               classpath = System.getProperty("java.class.path");
-              cpFiles=classpath.split(";");
+              cpFiles=(classpath.indexOf(";")!=-1)?classpath.split(";"):classpath.split(":"); //; for windows : for linux
             }
         	
            Pattern bundleSymbolNamePattern = Pattern.compile("^\\s*Bundle-SymbolicName\\s*:\\s*([^\\s;]*)\\s*([^\\s;]*)(;.*)?$", Pattern.MULTILINE);
