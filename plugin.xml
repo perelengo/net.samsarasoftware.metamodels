@@ -241,14 +241,14 @@
    <extension point="org.eclipse.uml2.uml.dynamic_package">
 		<profile
 			uri="http://www.samsarasoftware.net/modelview.profile"
-			location="platform:/plugin/com.samsarasoftware.metamodels/profiles/uml2qvto.profile.uml#_NPYckDJ8EeuNR60Z_jZTgw">
+			location="platform:/plugin/com.samsarasoftware.metamodels/profiles/modelview.profile.uml#_NPYckDJ8EeuNR60Z_jZTgw">
       </profile>
    </extension>
    <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
 		<profile
 			name="uml2qvto"
-			uri="http://www.samsarasoftware.net/uml2qvto.profile"
-			path="platform:/plugin/com.samsarasoftware.metamodels/profiles/uml2qvto.profile.uml#_wiD2ICsgEeuPkNCMp8sB_w">
+			uri="http://www.samsarasoftware.net/modelview.profile"
+			path="platform:/plugin/com.samsarasoftware.metamodels/profiles/modelview.profile.uml#_wiD2ICsgEeuPkNCMp8sB_w">
       </profile>
    </extension>
 </plugin>
